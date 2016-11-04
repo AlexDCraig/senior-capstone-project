@@ -1,0 +1,105 @@
+\documentclass[letterpaper, 10pt,titlepage]{article}
+
+\usepackage{graphicx}                                        
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+\usepackage{url}
+\usepackage{pst-gantt}
+\usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+\usepackage{pstricks, pst-node}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = black
+}
+
+\setcounter{secnumdepth}{4}
+\def\name{Chongxian Chen}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {Problem Statement},
+  pdftitle = {Capstone Project},
+  pdfsubject = {Capstone Project},
+  pdfpagemode = UseNone
+}
+
+\begin{document}
+
+\section{Gantt Chart}
+\newpsstyle{Important}{fillstyle=solid,fillcolor=red}
+\newpsstyle{NotImportant}{fillstyle=vlines}
+\begin{flushleft}
+ 
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3, ChartModulo,ChartModuloValue=11, ChartStartInterval=5,ChartShowIntervals]{4}{5} 
+%\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
+
+%------------------------WEB----------------------------------
+\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Fall 2016}]{0}{5}
+\PstGanttTask[TaskOutsideLabel={Requirement Doc Signed},TaskUnitType=Day]{0}{7}
+\PstGanttTask[TaskOutsideLabel={Populate Database},TaskUnitType=Day]{7}{14}
+\PstGanttTask[TaskOutsideLabel={Implement Learning Algorithms},TaskUnitType=Day]{21}{14}
+
+%\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
+%\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
+%\PstGanttTask[TaskOutsideLabel={Task 5}]{5}{2}
+
+\end{PstGanttChart}
+
+\vspace{15mm} %15mm vertical space
+
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3, ChartModulo,ChartModuloValue=11, ChartStartInterval=0,ChartShowIntervals]{6}{10} 
+%\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
+
+%------------------------WEB----------------------------------
+\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Winter 2017}]{0}{10}
+\PstGanttTask[TaskOutsideLabel={Basic Output},TaskUnitType=Day]{0}{14}
+\PstGanttTask[TaskOutsideLabel={Allow User Select Statics},TaskUnitType=Day]{14}{14}
+\PstGanttTask[TaskOutsideLabel={Learning Algorithm Revision},TaskUnitType=Day]{28}{14}
+\PstGanttTask[TaskOutsideLabel={Develop GUI},TaskUnitType=Day]{42}{14}
+\PstGanttTask[TaskOutsideLabel={Test and debug},TaskUnitType=Day]{56}{14}
+
+%\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
+%\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
+%\PstGanttTask[TaskOutsideLabel={Task 5}]{5}{2}
+
+\end{PstGanttChart}
+
+\end{flushleft}
+
+
+\newpage
+\textbf{ }
+\vspace{5.0cm}
+
+\noindent\rule{13cm}{0.4pt}\\
+Client
+\vspace{3.0cm}
+
+\noindent\rule{13cm}{0.4pt}\\
+Developer
+\vspace{3.0cm}
+
+
+\noindent\rule{13cm}{0.4pt}\\
+Developer
+\vspace{3.0cm}
+
+
+\noindent\rule{13cm}{0.4pt}\\
+Developer
+\vspace{3.0cm}
+
+
+
+\end{document}
