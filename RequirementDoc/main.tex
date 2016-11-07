@@ -1,0 +1,192 @@
+\documentclass[letterpaper, 10pt,titlepage]{article}
+
+\usepackage{graphicx}                                        
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+\usepackage{url}
+\usepackage{pst-gantt}
+\usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+\usepackage{pstricks, pst-node}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = black
+}
+
+\setcounter{secnumdepth}{4}
+\def\name{Chongxian Chen}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {Problem Statement},
+  pdftitle = {Capstone Project},
+  pdfsubject = {Capstone Project},
+  pdfpagemode = UseNone
+}
+
+\begin{document}
+
+\begin{center}
+
+Oregon State University Computer Science Senior Design 2016
+\bigbreak
+Requirements Document
+\bigbreak
+By Alex Hoffer, Jake Smith, and Chen Chongxian
+\bigbreak
+Team Name: Stat Champs
+\bigbreak
+\vspace{3.0cm}
+ Abstract
+\bigbreak
+The Biochemistry and Biophysics department at Oregon State University will have a server that allows for students to select statistical categories from college basketball games and generate March Madness brackets from these selections.
+\newpage
+\end{center}
+
+
+
+
+
+\begin{section}{Service Need}
+The Biochemistry and Biophysics department at Oregon State University needs to train their students on basic machine learning concepts. This is because machine learning is a highly useful tool in Biochemistry and Biophysics. For example, the generation of DNA sequences is made possible by machine learning. However, machine learning is not a cornerstone of these students’ education. There needs to be an instructional tool that provides these students with the opportunity to understand basic machine learning principles. Grasping machine learning concepts from its applications to biochemistry/biophysics is difficult because these models are generally hard to interpret. Therefore, this tool should utilize results that are simple to interpret in order for students to understand how training data on certain statistics can either damage or improve the accuracy of their generated model. The use of March Madness brackets makes this possible because the output of the students’ effort will be straightforward: a team can either win or lose in each round, and whichever basketball statistics the user chose to train their data on will be reflected in how far each team goes in their model.
+\end{section}
+
+
+\begin{section}{Purpose and Scope}
+The purpose of this project is to provide Biochemistry and Biophysics students at Oregon State University the opportunity to learn basic machine learning concepts through a system consisting of a graphical user interface, a database containing basketball statistics, and a processing module for generating brackets based on the statistics chosen.
+
+
+\end{section}
+
+
+
+
+
+
+
+
+\begin{section}{Technical Challenges/Issues}
+
+
+We would like this instructional tool to be hosted online. This means that we must consider the different browsers students may use. We want our tool to be compatible with Internet Explorer, Google Chrome, and Mozilla Firefox. We must be careful in developing our GUI so that it appears the same in each of these three browsers.
+
+
+\bigbreak
+\bigbreak
+\bigbreak
+\end{section}
+
+
+
+
+
+
+\section{Gantt Chart}
+\newpsstyle{Important}{fillstyle=solid,fillcolor=red}
+\newpsstyle{NotImportant}{fillstyle=vlines}
+\begin{flushleft}
+ 
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3, ChartModulo,ChartModuloValue=11, ChartStartInterval=5,ChartShowIntervals]{4}{5} 
+%\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
+
+%------------------------WEB----------------------------------
+\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Fall 2016}]{0}{5}
+\PstGanttTask[TaskOutsideLabel={Requirement Doc Signed},TaskUnitType=Day]{0}{7}
+\PstGanttTask[TaskOutsideLabel={Populate Database},TaskUnitType=Day]{7}{14}
+\PstGanttTask[TaskOutsideLabel={Implement Learning Algorithms},TaskUnitType=Day]{21}{14}
+
+%\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
+%\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
+%\PstGanttTask[TaskOutsideLabel={Task 5}]{5}{2}
+
+\end{PstGanttChart}
+
+\vspace{15mm} %15mm vertical space
+
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3, ChartModulo,ChartModuloValue=11, ChartStartInterval=0,ChartShowIntervals]{6}{10} 
+%\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
+
+%------------------------WEB----------------------------------
+\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Winter 2017}]{0}{10}
+\PstGanttTask[TaskOutsideLabel={Basic Output},TaskUnitType=Day]{0}{14}
+\PstGanttTask[TaskOutsideLabel={Allow User Select Statics},TaskUnitType=Day]{14}{14}
+\PstGanttTask[TaskOutsideLabel={Learning Algorithm Revision},TaskUnitType=Day]{28}{14}
+\PstGanttTask[TaskOutsideLabel={Develop GUI},TaskUnitType=Day]{42}{14}
+\PstGanttTask[TaskOutsideLabel={Test and debug},TaskUnitType=Day]{56}{14}
+
+%\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
+%\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
+%\PstGanttTask[TaskOutsideLabel={Task 5}]{5}{2}
+
+\end{PstGanttChart}
+
+\end{flushleft}
+
+
+\newpage
+
+
+\begin{section}{Functional Requirements}
+1.       Users start out by seeing instructions on how to use the tool. \\
+2.       Users then see a compilation of basketball statistics and select which statistics they want to train their model on. \\
+3.   	The user is asked which machine learning algorithm they want to use (???) \\
+4.       The statistics are passed to the machine learning algorithm, a bracket is generated and presented to the user. \\
+5.       The user is given an option to create a new bracket. \\
+
+
+\end{section}
+
+\begin{section}{Technical Requirements}
+1.       Cross-browser support (IE, Firefox, Chrome) \\
+2.       API with acceptable level of documentation \\
+
+
+\end{section}
+
+\begin{section}{Usability Requirements}
+1.       The system will fully function in major browsers (outlined above). \\
+
+
+\end{section}
+
+
+
+
+
+\newpage
+\begin{section}{Agreement}
+\textbf{ }
+\vspace{5.0cm}
+
+\noindent\rule{13cm}{0.4pt}\\
+Client
+\vspace{3.0cm}
+
+\noindent\rule{13cm}{0.4pt}\\
+Developer
+\vspace{3.0cm}
+
+
+\noindent\rule{13cm}{0.4pt}\\
+Developer
+\vspace{3.0cm}
+
+
+\noindent\rule{13cm}{0.4pt}\\
+Developer
+\vspace{3.0cm}
+
+\end{section}
+
+
+\end{document}
