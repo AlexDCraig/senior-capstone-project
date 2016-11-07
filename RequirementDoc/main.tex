@@ -58,7 +58,7 @@ The Biochemistry and Biophysics department at Oregon State University will have 
 
 
 \begin{section}{Service Need}
-The Biochemistry and Biophysics department at Oregon State University needs to train their students on basic machine learning concepts. This is because machine learning is a highly useful tool in Biochemistry and Biophysics. For example, the generation of DNA sequences is made possible by machine learning. However, machine learning is not a cornerstone of these students’ education. There needs to be an instructional tool that provides these students with the opportunity to understand basic machine learning principles. Grasping machine learning concepts from its applications to biochemistry/biophysics is difficult because these models are generally hard to interpret. Therefore, this tool should utilize results that are simple to interpret in order for students to understand how training data on certain statistics can either damage or improve the accuracy of their generated model. The use of March Madness brackets makes this possible because the output of the students’ effort will be straightforward: a team can either win or lose in each round, and whichever basketball statistics the user chose to train their data on will be reflected in how far each team goes in their model.
+The Biochemistry and Biophysics department at Oregon State University needs to train their students on basic machine learning concepts. This is because machine learning is a highly useful tool in Biochemistry and Biophysics. For example, finding and understanding biologically functional DNA sequences is made possible by machine learning. However, machine learning is not a cornerstone of these students’ education. There needs to be an instructional tool that provides these students with the opportunity to understand basic machine learning principles. Grasping machine learning concepts from its applications to biochemistry/biophysics is difficult because these models are generally hard to interpret. Therefore, this tool should utilize results that are simple to interpret in order for students to understand how training data on certain statistics can either damage or improve the accuracy of their generated model. The use of March Madness brackets makes this possible because the output of the students’ effort will be straightforward: a team can either win or lose in each round, and whichever basketball statistics the user chose to train their data on will be reflected in how far each team goes in their model.
 \end{section}
 
 
@@ -78,7 +78,7 @@ The purpose of this project is to provide Biochemistry and Biophysics students a
 \begin{section}{Technical Challenges/Issues}
 
 
-We would like this instructional tool to be hosted online. This means that we must consider the different browsers students may use. We want our tool to be compatible with Internet Explorer, Google Chrome, and Mozilla Firefox. We must be careful in developing our GUI so that it appears the same in each of these three browsers.
+We would like this instructional tool to be hosted online. This means that we must consider the different browsers students may use. We want our tool to be compatible with Internet Explorer, Google Chrome, and Mozilla Firefox. We must be careful in developing our GUI so that it appears the same in each of these browsers. To ensure the appearance of the module will be identical between these three options, our GUI will be written in the JavaScript library webix, which provides support for these three browsers. Another technical challenge we must solve is allowing users to select from a myriad of statistical categories and transferring this input to our machine learning submodule. The statistical categories we will be including are _____ and will be displayed ____ We also must be sure that our machine learning submodule will function properly in each of these three browsers. That is, users should be able to select from which machine learning algorithm they want to use after selecting their statistical categories and the output of such a decision should accurately reflect both of these factors. In order to achieve this, we will use the Python scikit library, which is stable for our purposes.  
 
 
 \bigbreak
@@ -139,7 +139,7 @@ We would like this instructional tool to be hosted online. This means that we mu
 \begin{section}{Functional Requirements}
 1.       Users start out by seeing instructions on how to use the tool. \\
 2.       Users then see a compilation of basketball statistics and select which statistics they want to train their model on. \\
-3.   	The user is asked which machine learning algorithm they want to use (???) \\
+3.   	The user is asked which machine learning algorithm they want to use. \\
 4.       The statistics are passed to the machine learning algorithm, a bracket is generated and presented to the user. \\
 5.       The user is given an option to create a new bracket. \\
 
@@ -147,14 +147,14 @@ We would like this instructional tool to be hosted online. This means that we mu
 \end{section}
 
 \begin{section}{Technical Requirements}
-1.       Cross-browser support (IE, Firefox, Chrome) \\
+1.       Cross-browser support (IE, Firefox, Chrome) for both GUI (using webix) and machine learning submodule (using scikit). \\
 2.       API with acceptable level of documentation \\
 
 
 \end{section}
 
 \begin{section}{Usability Requirements}
-1.       The system will fully function in major browsers (outlined above). \\
+1.       The system will look and act the same in all major browsers (outlined above). \\
 
 
 \end{section}
