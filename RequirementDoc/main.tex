@@ -96,14 +96,18 @@ We would like this instructional tool to be hosted online. This means that we mu
 \newpsstyle{NotImportant}{fillstyle=vlines}
 \begin{flushleft}
  
-\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3, ChartModulo,ChartModuloValue=11, ChartStartInterval=5,ChartShowIntervals]{4}{5} 
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=5, ChartModulo,ChartModuloValue=11, ChartStartInterval=3,ChartShowIntervals]{7}{7} 
 %\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
 
-%------------------------WEB----------------------------------
-\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Fall 2016}]{0}{5}
-\PstGanttTask[TaskOutsideLabel={Requirement Doc Signed},TaskUnitType=Day]{0}{7}
-\PstGanttTask[TaskOutsideLabel={Populate Database},TaskUnitType=Day]{7}{14}
-\PstGanttTask[TaskOutsideLabel={Implement Learning Algorithms},TaskUnitType=Day]{21}{14}
+%-----------------------Fall2016-----------------------------------
+\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Fall 2016}]{0}{7}
+\PstGanttTask[TaskOutsideLabel={Problem Statement},TaskUnitType=Day]{0}{14}
+
+\PstGanttTask[TaskOutsideLabel={Requirement Doc Signed},TaskUnitType=Day]{14}{14}
+\PstGanttTask[TaskOutsideLabel={Technical Review and Labor Division},TaskUnitType=Day]{28}{7}
+\PstGanttTask[TaskOutsideLabel={Research},TaskUnitType=Day]{28}{21}
+\PstGanttTask[TaskOutsideLabel={Design Document},TaskUnitType=Day]{35}{7}
+\PstGanttTask[TaskOutsideLabel={Progress Report},TaskUnitType=Day]{42}{7}
 
 %\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
 %\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
@@ -113,16 +117,38 @@ We would like this instructional tool to be hosted online. This means that we mu
 
 \vspace{15mm} %15mm vertical space
 
-\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3, ChartModulo,ChartModuloValue=11, ChartStartInterval=0,ChartShowIntervals]{6}{10} 
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3.8, ChartModulo,ChartModuloValue=11, ChartStartInterval=0,ChartShowIntervals]{9}{10} 
 %\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
 
-%------------------------WEB----------------------------------
+%------------------------Winter2017----------------------------------
 \PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Winter 2017}]{0}{10}
-\PstGanttTask[TaskOutsideLabel={Basic Output},TaskUnitType=Day]{0}{14}
-\PstGanttTask[TaskOutsideLabel={Allow User Select Statics},TaskUnitType=Day]{14}{14}
-\PstGanttTask[TaskOutsideLabel={Learning Algorithm Revision},TaskUnitType=Day]{28}{14}
-\PstGanttTask[TaskOutsideLabel={Develop GUI},TaskUnitType=Day]{42}{14}
-\PstGanttTask[TaskOutsideLabel={Test and debug},TaskUnitType=Day]{56}{14}
+\PstGanttTask[TaskOutsideLabel={Setup Database with  Relevant Data},TaskUnitType=Day]{0}{14}
+\PstGanttTask[TaskOutsideLabel={Design Friendly User Interface},TaskUnitType=Day]{7}{14}
+\PstGanttTask[TaskOutsideLabel={Design Algorithm Utilizing Database},TaskUnitType=Day]{7}{21}
+\PstGanttTask[TaskOutsideLabel={User Interface with User Input},TaskUnitType=Day]{28}{14}
+\PstGanttTask[TaskOutsideLabel={Design Algorithm with User Input},TaskUnitType=Day]{28}{14}
+\PstGanttTask[TaskOutsideLabel={Integrate The Project},TaskUnitType=Day]{42}{14}
+\PstGanttTask[TaskOutsideLabel={Testing},TaskUnitType=Day]{49}{14}
+\PstGanttTask[TaskOutsideLabel={Progress Report},TaskUnitType=Day]{56}{14}
+
+%\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
+%\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
+%\PstGanttTask[TaskOutsideLabel={Task 5}]{5}{2}
+
+\end{PstGanttChart}
+
+\vspace{15mm} %15mm vertical space
+
+\begin{PstGanttChart}[unit=2,TaskOutsideLabelMaxSize=3.8, ChartModulo,ChartModuloValue=11, ChartStartInterval=0,ChartShowIntervals]{6}{10} 
+%\PstGanttTask[TaskOutsideLabel={Stat Champs Machine Learning}]{2}{3}
+
+%-----------------------Spring2017----------------------------------
+\PstGanttTask[TaskInsideLabel={Stat Champs Machine Learning Spring 2017}]{0}{10}
+\PstGanttTask[TaskOutsideLabel={Initial Release},TaskUnitType=Day]{0}{14}
+\PstGanttTask[TaskOutsideLabel={Design Posters},TaskUnitType=Day]{14}{14}
+\PstGanttTask[TaskOutsideLabel={Prepare for Presenting},TaskUnitType=Day]{28}{28}
+\PstGanttTask[TaskOutsideLabel={Final Report},TaskUnitType=Day]{35}{21}
+\PstGanttTask[TaskOutsideLabel={Engineering Expo},TaskUnitType=Day]{56}{7}
 
 %\PstGanttTask[TaskStyle=Important,TaskOutsideLabel={Task 3}, TaskInsideLabel={\Large\textcolor{white}{\textbf{Important}}}]{2}{5}
 %\PstGanttTask[TaskStyle=NotImportant,TaskOutsideLabel={Task 4}]{4}{2}
