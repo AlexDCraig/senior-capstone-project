@@ -34,6 +34,9 @@
   pdfpagemode = UseNone
 }
 
+\renewcommand*\contentsname{Table of Contents}
+
+
 \begin{document}
 
 \begin{center}
@@ -53,8 +56,9 @@ The Biochemistry and Biophysics department at Oregon State University will have 
 \newpage
 \end{center}
 
-\begin{section}{Table of Contents}
-\end{section}
+\tableofcontents
+
+\newpage
 
 \begin{section}{1. Introduction}
 \end{section}
@@ -120,9 +124,40 @@ We would like this instructional tool to be hosted online. This means that we mu
 
 
 
+\begin{section}{Specific requirements}
+\end{section}
+
+\begin{section}{Functional Requirements}
+1.	Users start out by seeing instructions on how to use the tool presented to them using the JavaScript library webix. \\
+2.	Users then see a compilation of basketball statistics consisting of the categories such as points, assists, and rebounds per game (for each player and team) and select which statistics they want to train their model on. \\
+3.   	The user is asked which machine learning algorithm out of a set including supervised and unsupervised learning algorithms we provide that they want to use. \\
+4.      The statistics are passed to the corresponding .machine learning algorithm which is computed using scikit. 
+5. 	The resulting bracket is generated and presented to the user. \\
+5.      The user is given an option to create a new bracket. \\
 
 
-\section{Gantt Chart}
+\end{section}
+
+\begin{section}{Technical Requirements}
+1.       Cross-browser support (IE, Firefox, Chrome) for both GUI (using webix) and machine learning submodule (using scikit). \\
+2.       API with acceptable level of documentation \\
+
+
+\end{section}
+
+\begin{section}{Usability Requirements}
+1.       The system will look and act the same in all major browsers (outlined above). \\
+
+
+\end{section}
+
+
+
+\begin{section}{Appendix}
+
+
+
+\subsection{Gantt Chart}
 \newpsstyle{Important}{fillstyle=solid,fillcolor=red}
 \newpsstyle{NotImportant}{fillstyle=vlines}
 \begin{flushleft}
@@ -191,35 +226,6 @@ We would like this instructional tool to be hosted online. This means that we mu
 
 
 \newpage
-
-
-\begin{section}{Specific requirements}
-\end{section}
-
-\begin{section}{Functional Requirements}
-1.	Users start out by seeing instructions on how to use the tool presented to them using the JavaScript library webix. \\
-2.	Users then see a compilation of basketball statistics consisting of the categories such as points, assists, and rebounds per game (for each player and team) and select which statistics they want to train their model on. \\
-3.   	The user is asked which machine learning algorithm out of a set including supervised and unsupervised learning algorithms we provide that they want to use. \\
-4.      The statistics are passed to the corresponding .machine learning algorithm which is computed using scikit. 
-5. 	The resulting bracket is generated and presented to the user. \\
-5.      The user is given an option to create a new bracket. \\
-
-
-\end{section}
-
-\begin{section}{Technical Requirements}
-1.       Cross-browser support (IE, Firefox, Chrome) for both GUI (using webix) and machine learning submodule (using scikit). \\
-2.       API with acceptable level of documentation \\
-
-
-\end{section}
-
-\begin{section}{Usability Requirements}
-1.       The system will look and act the same in all major browsers (outlined above). \\
-
-
-\end{section}
-
 
 
 
