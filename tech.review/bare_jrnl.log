@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.14)  14 NOV 2016 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.14)  14 NOV 2016 21:26
 entering extended mode
 **./bare_jrnl.tex
 (bare_jrnl.tex
@@ -192,7 +192,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no  in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--810
+Underfull \hbox (badness 10000) in paragraph at lines 798--799
 []\OT1/ptm/m/n/8 J. Shore, An Un-con-ven-tional Re-view of An-gu-larJS, \OT1/pt
 m/m/it/8 Let's Code Javascript\OT1/ptm/m/n/8 , 14-Jan-2015. [On-line]. Avail-ab
 le:
@@ -230,7 +230,7 @@ Here is how much of TeX's memory you used:
 ype1/urw/times/utmb8a.pfb><C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/urw/times/utmr8a.pfb><C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on techreview.pdf (4 pages, 57082 bytes).
+Output written on techreview.pdf (4 pages, 57009 bytes).
 PDF statistics:
  28 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
