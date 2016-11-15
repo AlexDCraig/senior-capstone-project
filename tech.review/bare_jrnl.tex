@@ -497,7 +497,15 @@ Since there are not major concerns with security for this module because of the 
 \end{center}
 
 \subsubsection{Discussion}
-Each of these three technologies are viable options. Since they are all Python libraries, they should be easy to learn, which is important because the GUI is the first thing to be developed in our project and the other requirements build from it. Each of the three are powerful enough for our purposes, and each have different strengths. Kivy is sophisticated and elegant, but it might be too vast for our uses. Kivy is used in things like touch screen animation, and our project doesn't call for an extremely sophisticated GUI. In fact, our GUI should be simple and unobtrusive so as not to draw attention away from the machine learning components. PyQt's strength appears to be in mobile development. Since our module doesn't have to be usable from a mobile device, it may be best to go with a technology with a focus in computer based web development. This brings us to PyGUI, which is the best of the three options for our purposes. PyGUI is the oldest of the three and was developed to be simple to implement. Its focus matches with ours: we need a simple GUI, and PyGUI is the least flashy and most reasonable of these technologies.
+Each of these three technologies are viable options. Since they are all Python libraries, they should be easy to learn, 
+which is important because the GUI is the first thing to be developed in our project and the other requirements build from it. 
+Each of the three are powerful enough for our purposes, and each have different strengths. Kivy is sophisticated and elegant, 
+but it might be too vast for our uses. Kivy is used in complex operations like touch screen animation [1], and our project doesn't call for an 
+extremely sophisticated GUI. In fact, our GUI should be simple and unobtrusive so as not to draw attention away from the machine learning components. 
+PyQt's strength appears to be in mobile development [2]. Since our module doesn't have to be usable from a mobile device, it may be best to go with
+ a technology with a focus in computer based web development. This brings us to PyGUI, which is the best of the three options for our purposes. 
+ PyGUI is the oldest of the three and was developed to be simple to implement [2]. Its focus matches with ours: we need a simple GUI, and PyGUI is the 
+ least flashy and most reasonable of these technologies.
 \subsubsection{Selection of best option}
 PyGUI is the technology that seems to most closely capture the needs of our GUI without adding fancy features that may slow our module down and make maintenance and testing difficult.
 
@@ -528,7 +536,14 @@ Security is again not particularly important due to the innocuousness of the dat
 \end{center}
 
 \subsubsection{Discussion}
-Webix is a popular and reliable option. What makes it so attractive is how feature rich it is, its ease of use, and its readability. One drawback of Webix is that it's difficult to tell how fast it is. It also isn't as lightweight as UKI, but it is still quite small, so its size won't be slowing down the server. UKI is also a good option and its focus appears to directly parallel ours. It is meant for desktop applications, which is the medium of our project. Angular JS seems to be the worst of these three options, as it is hard to learn and its programs grow rapidly in complexity. It may be too ambitious for the requirements of our project to learn Angular JS.
+Webix is a popular and reliable option. What makes it so attractive is how feature rich it is, its ease of use, and its readability. The example
+program listed on [3] demonstrates how economical it is, too. With only several lines of code, Webix is capable of generating a clean and usable
+user interface. One drawback of Webix is that it's difficult to tell how fast it is. Its documentation merely makes note that is fast, but provides no
+usable metrics. It also isn't as lightweight as UKI (128 KB for Webix [3] and 34 KB for UKI [4]), 
+but it is still quite small, so its size won't be slowing down the server. UKI is also a good option and its focus appears to directly parallel ours. 
+It is meant for desktop applications [4], which is the medium of our project. It is also quite fast due to its progressive rendering and can
+produce 30,000 tables almost instantaneously [4]. Angular JS seems to be the worst of these three options, as it is hard to learn [5] and 
+ its programs grow rapidly in complexity. It may be too ambitious for the requirements of our project to learn Angular JS.
 \subsubsection{Selection of best option}
 Webix is the best option because it is easy to use, reliable, and offers the features that we need without slowing down the server. UKI is another good option but is harder to use. Angular JS is not necessary for our project.
 
@@ -558,7 +573,14 @@ Cost and security are again not important for the reasons outlined earlier. Avai
 \end{center}
 
 \subsubsection{Discussion}
-TkInter is the standard for Python GUIs. However, it isn't very fast and offers many features that aren't necessary for our needs. It also isn't particularly easy to read, which has implications for both testing and maintenance. We need a framework that can accept data generated by a machine learning algorithm and then present the data in bracket form. This is, in essence, data visualization. This makes VTK a compelling option. VTK is economical (you can do a lot with a small amount of code), easy to read, very fast, and was developed with data visualization in mind. Wax is the least compelling option. It is difficult to read, only somewhat fast, and appears to be in many ways flawed. [2] suggests that Wax is a good option if you want to quickly hack something together, but the presentation of the bracket is perhaps the most important part of this project, and as such, it should not be hacked together. We require an elegant solution to this problem and VTK appears to be the tool that will be most poised to fit our needs.
+TkInter is the standard for Python GUIs. However, it isn't very fast [6] and offers many features that aren't necessary for our needs. 
+It also isn't particularly easy to read, which has implications for both testing and maintenance. We need a framework that can accept
+ data generated by a machine learning algorithm and then present the data in bracket form. This is, in essence, data visualization. This 
+ makes VTK a compelling option. VTK is economical (you can do a lot with a small amount of code), easy to read, very fast, and was developed
+ with data visualization in mind [7]. Wax is the least compelling option. It is difficult to read, only somewhat fast, and appears to be in many ways flawed. 
+ [8] suggests that Wax is a good option if you want to quickly hack something together, but the presentation of the bracket is perhaps the most important part of this 
+ project, and as such, it should not be hacked together. We require an elegant solution to this problem and VTK appears to be the tool that will
+ be most poised to fit our needs.
 \subsubsection{Selection of best option}
 VTK is the option that is most likely to give us the results we want. It is designed with data visualization in mind, which is what we need it for. The other two frameworks are flawed.
 
@@ -729,9 +751,22 @@ Appendix two text goes here.
 % (used to reserve space for the reference number labels box)
 \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\bibitem{Kivy}
+  “Kivy: Cross-platform Python Framework for NUI,” \emph{Kivy}. [Online]. Available: https://kivy.org/. [Accessed: 14-Nov-2016].
+\bibitem{Dice} 
+ D. Bolton, “5 Top Python GUI Frameworks for 2015 - Dice Insights,” \emph{Dice}, Feb-2016. [Online]. Available: http://insights.dice.com/2014/11/26/5-top-python-guis-for-2015/. [Accessed: 14-Nov-2016]. 
+\bibitem{Webix}
+“JavaScript Framework and HTML5 UI Library for Web App Development-Webix,” \emph{Webix}. [Online]. Available: https://webix.com/. [Accessed: 14-Nov-2016]. 
+\bibitem{Best Web Frameworks} 
+ UKI,” \emph{Best Web Frameworks}. [Online]. Available: http://www.bestwebframeworks.com/web-framework-review/javascript/117/uki/. [Accessed: 14-Nov-2016]. 
+\bibitem{Let's Code Javascript}
+J. Shore, “An Unconventional Review of AngularJS,” \emph{Let's Code Javascript}, 14-Jan-2015. [Online]. Available: http://www.letscodejavascript.com/v3/blog/2015/01/angular\_review. [Accessed: 14-Nov-2016]. 
+\bibitem{Effbot}
+ F. Lungh, “Notes on Tkinter Performance,” \emph{Effbot}, 14-Jul-2002. [Online]. Available: http://effbot.org/zone/tkinter-performance.htm. [Accessed: 14-Nov-2016]. 
+ \bibitem{VTK}
+ “VTK-Enabled Applications,” \emph{VTK}. [Online]. Available: http://www.vtk.org/. [Accessed: 14-Nov-2016]. 
+ \bibitem{Python}
+ “Wax GUI Toolkit,” \emph{Python}. [Online]. Available: https://wiki.python.org/moin/wax. [Accessed: 14-Nov-2016]. 
 
 \end{thebibliography}
 
