@@ -565,6 +565,70 @@ VTK is the option that is most likely to give us the results we want. It is desi
 
 
 
+
+
+\subsection{Technology 4: Where the data will come from}
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsubsection{Options 1, 2, and 3}
+Ncaa.com, sports-reference.com, and kenpom.com 
+\subsubsection{Goals for use in design}
+The Goal is to determine where to get the statistics from that can provide an easy way to take the data off the website as well as have all the necessary stat categories were looking for.
+
+\subsubsection{Criteria being evaluated}
+Cost is a factor because there are websites such as kenpom that offer advanced statistics for mens ncaa basketball but you must pay to access the data. Websites such as ncaa.com and sports-reference are free to use and browse stats. The amount of stats available is important because the more data points you have to work with the better, because of this kenpom has an advantage. It offers more statistical categories than both ncaa and sports-reference.com. The ease of use is another important factor both kenpom and sports-reference provide downloadable csv files that can then easily be dealt with to put in a database while ncaa.com does not. 
+
+\subsubsection{Table comparing options}
+
+
+\subsubsection{Discussion}
+Sports-reference is a great option because it has most of the statistics we will need and they are easy to download and use in a csv file unlike the other free option ncaa.com which has roughly the same statistics but without the easy to use downloadable csv. For ncaa.com we would need to write a piece of code that scrapes statistics that we need from the website to gather the data. Or we could pay for the data using a site like kenpom.com and possibly get data points we would not get otherwise using the two free options.
+
+\subsubsection{Selection of best option}
+Sports-reference.com is the best option because it’s free, easy to deal with and has enough data to go on. More data can always be scraped off other free websites.
+
+
+
+
+\subsection{Technology 5: Storage of the data}
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsubsection{Options 1, 2, and 3}
+Excel, Python DB, and phpmyadmin
+\subsubsection{Goals for use in design}
+Goal is to figure out the best database option to use that will be the easiest to integrate with the website and machine learning algorithms.
+
+\subsubsection{Criteria being evaluated}
+Cost isn’t a factor is this one because they are all free or offered through OSU. The availability and security of the system aren’t a factor because they are all available and the data in the database is not sensitive so it does not need to be encrypted or protected in any extra fashion. Ease of use is a factor because the database needs to be able to integrate with the website nicely.
+
+\subsubsection{Table comparing options}
+
+
+\subsubsection{Discussion}
+They are all viable options to use for this project each do about the same thing except excel and phpmyadmin would be external from the machine learning python code. Both excel and phpmyadmin are both nice to use because you can search on your dataset. They are all very easy to interact with via python code but phpmyadmin has the big bonus of having a nice user interface for the database as well as the ability to add data very easily via csv files which are the form most of the statistics would come in.  
+
+\subsubsection{Selection of best option}
+Given that phpmyadmin has the user interface and it is very csv file friendly I am going to have to choose it for our database storage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
