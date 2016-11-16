@@ -462,8 +462,7 @@ Students of Biochemistry and Biophysics at Oregon State University need to have 
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{T}{here} are many important technological considerations when developing this instructional tool. The page must be reasonably fast, responsive, and usable, it must provide statistics for the user to choose from, and it must provide these statistics as input to machine learning algorithms. Finally, the bracket must be generated and presented to the user. Each one of these necessary components has several potential technologies that could be used satisfactorily. It is the purpose of this document to identify the possible technologies and make reasoned decisions as to what technologies we will be using. The first nine possible technologies were written by Alex Hoffer. These first nine technologies are chiefly concerned with the usability of the service, specifically the design of the graphical user interface, the instructions that will be presented to the user, and the presentation of the machine learning bracket that is generated. It is our belief that in order for the tool to be effective in educating students it must be well designed and easy to understand. \\insert Chongxian and Jake's info \\ insert table of contents
-% You must have at least 2 lines in the paragraph with the drop letter
+\IEEEPARstart{T}{here} are many important technological considerations when developing this instructional tool. The page must be reasonably fast, responsive, and usable, it must provide statistics for the user to choose from, and it must provide these statistics as input to machine learning algorithms. Finally, the bracket must be generated and presented to the user. Each one of these necessary components has several potential technologies that could be used satisfactorily. It is the purpose of this document to identify the possible technologies and make reasoned decisions as to what technologies we will be using. The first three possible technologies were written by Alex Hoffer. These first three technologies are chiefly concerned with the usability of the service, specifically the design of the graphical user interface, the instructions that will be presented to the user, and the presentation of the machine learning bracket that is generated. In technologies 4 and 5 Jake Smith will talk about how we will obtain and store the sports statistics for easy use by our machine learning algorithms. It is our belief that in order for the tool to be effective in educating students it must be well designed and easy to understand. (Chongxian stuff)% You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
 \hfill Stat Champs
@@ -591,20 +590,40 @@ VTK is the option that is most likely to give us the results we want. It is desi
 \subsubsection{Options 1, 2, and 3}
 Ncaa.com, sports-reference.com, and kenpom.com 
 \subsubsection{Goals for use in design}
-The Goal is to determine where to get the statistics from that can provide an easy way to take the data off the website as well as have all the necessary stat categories were looking for.
+The Goal is to determine where to get the statistics from that can provide an easy way to take the data off the website as well as have all the necessary statistical categories were looking for.
 
 \subsubsection{Criteria being evaluated}
-Cost is a factor because there are websites such as kenpom that offer advanced statistics for mens ncaa basketball but you must pay to access the data. Websites such as ncaa.com and sports-reference are free to use and browse stats. The amount of stats available is important because the more data points you have to work with the better, because of this kenpom has an advantage. It offers more statistical categories than both ncaa and sports-reference.com. The ease of use is another important factor both kenpom and sports-reference provide downloadable csv files that can then easily be dealt with to put in a database while ncaa.com does not. 
+Cost is a factor because there are websites such as kenpom that offer advanced statistics for mens ncaa basketball but you must pay to access the data. Websites such as ncaa.com and sports-reference are free to use and browse the statistics. The amount of stats available is important because the more data points you have to work with the better the machine learning algorithms will do. Kenpom has an advantage in this area, it offers more statistical categories than both ncaa and sports-reference.com. Some websites even offer statistics of where each player on the court was at all times during the game. The ease of use is another important factor both kenpom and sports-reference provide downloadable csv files that can easily be dealt with to put in a database while ncaa.com does not. Correctness of the data is important because the data must be accurate for the machine learning algorithms to do their best. Statistics for both ncaa and sports-reference are backed up by the ncaa or a third party like espn. Kenpom and cites you must pay for your data there is no certainty that the advanced data will be accurate. 
 
 \subsubsection{Table comparing options}
 
 
+\begin{center}
+ \begin{tabular}{||c | c | c | c | c | c||} 
+ \hline
+ Website & Cost & Amount & Ease of use & Correctness & Speed \\ [0.5ex] 
+ \hline\hline
+ NCAA.com & Free & All normal statistics & Need to write script to get data & Confirmed & Slow \\ 
+ \hline
+ Sports-reference.com & Free & All normal statistics & Downloadable csv file & Confirmed & Fast \\
+ \hline
+ Kenpom.com & Costs money & All normal statistics plus more advanced & Downloadable csv file & Not validated & fast \\ [1ex]
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+
+
 \subsubsection{Discussion}
-Sports-reference is a great option because it has most of the statistics we will need and they are easy to download and use in a csv file unlike the other free option ncaa.com which has roughly the same statistics but without the easy to use downloadable csv. For ncaa.com we would need to write a piece of code that scrapes statistics that we need from the website to gather the data. Or we could pay for the data using a site like kenpom.com and possibly get data points we would not get otherwise using the two free options.
+Sports-reference is a great option because it has most of the statistics we will need and it is easy to download and use in the csv files unlike the other free option ncaa.com which has roughly the same statistics but without the easy to use downloadable csv. For ncaa.com we would need to write a piece of code that scrapes statistics that we need from the website to gather the data. But if we did go that route we could scrape all the sites (ex. Espn, yahoo) and compare them against each other to see if they all are correct.  Or we could pay for the data using a site like kenpom.com and possibly get data points we would not get otherwise using the two free options should as player movement and touches.
 
 \subsubsection{Selection of best option}
-Sports-reference.com is the best option because it’s free, easy to deal with and has enough data to go on. More data can always be scraped off other free websites.
-
+Sports-reference.com is the best option because it’s free, easy to deal with and has enough data to go on. More data can always be scraped off other free websites. It also provides a deep history of the teams statistics so we could incorporate those data points as well.
 
 
 
@@ -613,19 +632,36 @@ Sports-reference.com is the best option because it’s free, easy to deal with a
 %\IEEEpubidadjcol
 
 \subsubsection{Options 1, 2, and 3}
-Excel, Python DB, and phpmyadmin
+Excel, Python SQLite, and phpmyadmin
 \subsubsection{Goals for use in design}
 Goal is to figure out the best database option to use that will be the easiest to integrate with the website and machine learning algorithms.
 
 \subsubsection{Criteria being evaluated}
-Cost isn’t a factor is this one because they are all free or offered through OSU. The availability and security of the system aren’t a factor because they are all available and the data in the database is not sensitive so it does not need to be encrypted or protected in any extra fashion. Ease of use is a factor because the database needs to be able to integrate with the website nicely.
+Cost isn’t a factor is this one because they are all free or offered through OSU. The availability and security of the system aren’t a factor because they are all available and the data in the database is not sensitive so it does not need to be encrypted or protected in any extra fashion. Ease of use is a factor because the database needs to be able to integrate with the website nicely as well as be able to add and delete data easily. Speed won’t be a factor because they all offer around the same speeds.
 
 \subsubsection{Table comparing options}
 
 
-\subsubsection{Discussion}
-They are all viable options to use for this project each do about the same thing except excel and phpmyadmin would be external from the machine learning python code. Both excel and phpmyadmin are both nice to use because you can search on your dataset. They are all very easy to interact with via python code but phpmyadmin has the big bonus of having a nice user interface for the database as well as the ability to add data very easily via csv files which are the form most of the statistics would come in.  
 
+\begin{center}
+ \begin{tabular}{||c | c | c | c | c||} 
+ \hline
+ Technology & Cost & Ease of use & Security & Speed \\ [0.5ex] 
+ \hline\hline
+ Excel & Free & Easy & Protected & Fast \\ 
+ \hline
+ Python SQLite & Free & Easy & Protected & Fast \\
+ \hline
+ Phpmyadmin & Free & Easy & Protected & fast \\ [1ex]
+ \hline
+\end{tabular}
+\end{center}
+
+
+
+
+\subsubsection{Discussion}
+They are all viable options to use for this project each do about the same thing except excel and phpmyadmin would be external from the machine learning python code. Both excel and phpmyadmin are both nice to use because you can search on your dataset easily. They are all very easy to interact with via python code but phpmyadmin has the big bonus of having a nice user interface for the database as well as the ability to add data very easily via csv files which are the form most of the statistics would come in. The big downside of SQLite, a database included with Python, is it creates a single file for all data per database. Other databases such as MySQL, phpmyadmin, and Oracle and Microsoft SQL Server have more complicated persistence schemes while offering additional advanced features that are useful for web application data storage.  
 \subsubsection{Selection of best option}
 Given that phpmyadmin has the user interface and it is very csv file friendly I am going to have to choose it for our database storage.
 
@@ -731,10 +767,9 @@ Given that phpmyadmin has the user interface and it is very csv file friendly I 
 
 
 \section{Conclusion}
-There are many tools available which can be used to achieve the exact software product we desire. With careful consideration, we have located what we believe
-to be the correct tools for the job. For developing a graphical user interface which will allow students to easily and accurately interact with the module,
-we will be using PyGUI to develop our basic interface, Webix to provide the user with instructions on how to use the tool, and VTK to present the 
-machine learned bracket in a way that is visually appealing. (insert jake and chongxians stuff)
+There are many tools available which can be used to achieve the exact software product we desire. With careful consideration, we have located what we believe to be the correct tools for the job. For developing a graphical user interface which will allow students to easily and accurately interact with the module, we will be using PyGUI to develop our basic interface, Webix to provide the user with instructions on how to use the tool, and VTK to present the machine learned bracket in a way that is visually appealing. For getting the basketball data we will use sports-reference.com because of their downloadable csv files. We will store all the data using phpmyadmin which offers a nice user interface for us to work with.
+(chongxians stuff)
+
 
 
 
