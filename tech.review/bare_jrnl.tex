@@ -666,6 +666,41 @@ They are all viable options to use for this project each do about the same thing
 Given that phpmyadmin has the user interface and it is very csv file friendly I am going to have to choose it for our database storage.
 
 
+% ----------------------------------- Chongxian's tech-----------------------------------------------------------------
+\subsection{Technology 7: Machine Learning Libraries/Platforms to Train the Model}
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsubsection{Options 1, 2, and 3}
+SciKit, Amazon Machine Learning(AML), Pylearn2. 
+\subsubsection{Goals for use in design}
+Our Algorithm should be as accurate as possible. It should be highly scalable considering we may have a lot of basketball match data. We also want full control of our algorithm, i.e. have access to the source code if we are using some library in case we may need to modify them for our project.
+\subsubsection{Criteria being evaluated}
+
+The cost is definitely one important aspect to be considered in our project. We want to make our model available to most people so they can learn that machine learning is a power tool to use in many areas. Providing access to as many people as possible at a low rate or free is our goal. 
+The availability is also considered. Some service may only be available in some countries. We should try to avoid those that are only accessible in a small area. 
+Speed is also an important aspect of our algorithm. Making our algorithm efficient really enhance the user experience a lot.
+Finally security is something to be considered in the process but not too important since we don’t have private user information. But keep in mind that a major flow in our project could cause danger to the system.
+\subsubsection{Table comparing options}
+\begin{center}
+\begin{tabular}{||c c c c c c||}
+\hline
+Technology & Economy & Readability & Availability & Speed & Notes \\ [0.5ex]
+\hline\hline
+SciKit & Extremely & very & Open Source & Very & The most popular ML library \\
+\hline
+AML & very & very & Open Source & Normal & Easy to start with but hard to modify \\
+\hline
+Pylearn2 & Extremely & very & Open Source & Very & Popular Library but no longer actively developing \\ [1ex]
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Discussion}
+All three options are very reliable. Amazon Machine Learning(AML) is a fast developing platform that provides easy Machine Learning model to many customers with different background to start with[9]. The advantage of Amazon Machine Learning model is that it has great GUI that makes the process easier. And according to its introduction, AML is very closed to the purpose of our model. With data training the model, it will give a prediction based on the data. Users can also narrow down the searching areas. But because AML is not open sourced I will first dismiss this option. Our project is likely to modify a lot of algorithm in order to better meet the potentially changing needs. SciKit is currently the most popular open source library on Python and has active developers developing them and fixing bugs[10]. While Pylearn2 is also a famous and a widely used library on Python, there is no developers responsible for developing them. Although Pylearn2 claims that they will continue reviewing pull request on Github, there is no active developer for the project[11].
+\subsubsection{Selection of best option}
+SciLearn is the best option for the need of our project. It is open-sourced, reliable and has active developers developing it. It is also widely popular which means we will be more likely to get community support.
+
 
 
 
@@ -837,7 +872,12 @@ J. Shore, “An Unconventional Review of AngularJS,” \emph{Let's Code Javascri
  “VTK-Enabled Applications,” \emph{VTK}. [Online]. Available: http://www.vtk.org/. [Accessed: 14-Nov-2016]. 
  \bibitem{Python}
  “Wax GUI Toolkit,” \emph{Python}. [Online]. Available: https://wiki.python.org/moin/wax. [Accessed: 14-Nov-2016]. 
-
+ \bibitem{Amazon Machine Learning}
+ “Amazon Machine Learning,” \emph{Amazon}. [Online]. Available: https://aws.amazon.com/machine-learning/. [Accessed: 14-Nov-2016]. 
+ \bibitem{Python}
+ "SciKit Learn,Machine Learning in Python,” \emph{scikit-learn}. [Online]. Available: http://scikit-learn.org/stable/. [Accessed: 14-Nov-2016]. 
+ \bibitem{Python}
+ "Pylearn2 devdocumentation,” \emph{Pylearn2}. [Online]. Available: http://deeplearning.net/software/pylearn2/. [Accessed: 14-Nov-2016]. 
 \end{thebibliography}
 
 % biography section
