@@ -462,7 +462,7 @@ Students of Biochemistry and Biophysics at Oregon State University need to have 
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{T}{here} are many important technological considerations when developing this instructional tool. The page must be reasonably fast, responsive, and usable, it must provide statistics for the user to choose from, and it must provide these statistics as input to machine learning algorithms. Finally, the bracket must be generated and presented to the user. Each one of these necessary components has several potential technologies that could be used satisfactorily. It is the purpose of this document to identify the possible technologies and make reasoned decisions as to what technologies we will be using. The first three possible technologies were written by Alex Hoffer. These first three technologies are chiefly concerned with the usability of the service, specifically the design of the graphical user interface, the instructions that will be presented to the user, and the presentation of the machine learning bracket that is generated. In technologies 4 and 5 Jake Smith will talk about how we will obtain and store the sports statistics for easy use by our machine learning algorithms. It is our belief that in order for the tool to be effective in educating students it must be well designed and easy to understand. (Chongxian stuff)% You must have at least 2 lines in the paragraph with the drop letter
+\IEEEPARstart{T}{here} are many important technological considerations when developing this instructional tool. The page must be reasonably fast, responsive, and usable, it must provide statistics for the user to choose from, and it must provide these statistics as input to machine learning algorithms. Finally, the bracket must be generated and presented to the user. Each one of these necessary components has several potential technologies that could be used satisfactorily. It is the purpose of this document to identify the possible technologies and make reasoned decisions as to what technologies we will be using. The first three possible technologies were written by Alex Hoffer. These first three technologies are chiefly concerned with the usability of the service, specifically the design of the graphical user interface, the instructions that will be presented to the user, and the presentation of the machine learning bracket that is generated. In technologies 4 and 5 Jake Smith will talk about how we will obtain and store the sports statistics for easy use by our machine learning algorithms. It is our belief that in order for the tool to be effective in educating students it must be well designed and easy to understand. Chongxian Chen will be responsible for designing and implementing machine learning algorithm. Technologies 6, 7 and 8  will be discussing technology involved in designing machine learning algorithm, namely algorithm library, statistics model and cloud server for hosting the project % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
 
 \hfill Stat Champs
@@ -667,7 +667,7 @@ Given that phpmyadmin has the user interface and it is very csv file friendly I 
 
 
 % ----------------------------------- Chongxian's tech-----------------------------------------------------------------
-\subsection{Technology 7: Machine Learning Libraries/Platforms to Train the Model}
+\subsection{Technology 6: Machine Learning Libraries/Platforms to Train the Model}
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
@@ -704,6 +704,68 @@ SciLearn is the best option for the need of our project. It is open-sourced, rel
 
 
 
+\subsection{Technology 7:Server for computational power and hosting our database}
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsubsection{Options 1, 2, and 3}
+Amazon Web Service(AWS), Google Cloud Platform(GCP), Oregon State University Student Engineering Server(OSU Server). 
+\subsubsection{Goals for use in design}
+Our project is likely to require strong computational power because our prediction model needs to evaluate a large amount of data. And if we want to access our model from different devices and different locations, it is important that we train our model on the cloud. A reliable database server on the cloud is also needed for the users to easily use our model worldwide and cross-platform.
+\subsubsection{Criteria being evaluated}
+Choosing the server for our project should consider the cost, availability, speed, reliability. All of these factors are extremely important. The reliability is the most important factor of them. Our data is precious and the machine-learning-algorithm-trained model is peculiar. Thus we can suffer any data loss. The speed is important as well. The AlphaGo from DeepMind trains itself by playing GO with itself millions of times every day. With fast speed, our model could be more accurate. Availability is also to be considered. For example, Google Cloud Server is not accessible while OSU server and Amazon Web Service are accessible in China. 
+
+\subsubsection{Table comparing options}
+\begin{center}
+\begin{tabular}{||c c c c c c||}
+\hline
+Technology & Economy & Readability & Availability & Speed & Notes \\ [0.5ex]
+\hline\hline
+AWS & very & very & Worldwide & Very & TA very popular service by Amazon \\
+\hline
+GCP & very & very & Most Countries & Very & Not Accessible from China \\
+\hline
+OSU Server & Extremely & Normal & Worldwide & Varies & Speed slows down when off campus \\ [1ex]
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Discussion}
+		When considering the server we use to host our model and data, it is extremely important to consider the factors mentioned above carefully. OSU Student Engineering Server is functionally complete. You can host Linux project there and OSU also provides database server. It is easy and familiar to use. If we have difficulty, we can directly access to tech support on campus. But it is not very fast outside campus. And OSU engineering server is not very flexible if Windows server is to be used. Also, student usually only have access to MySQL database[12]. Google Cloud Platform and Amazon Web Service are very similar. They both are hosted by giant companies in the US. The major difference between them when considering starting a new project is that Google is not accessible in China[13].
+\subsubsection{Selection of best option}
+		Overall, after carefully comparing important aspects of them, I think Amazon Web Service is the most reliable and appropriate solution for our project.
+
+
+\subsection{Technology 8:Statistics Model to determine the importance of different categories of data}
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+\subsubsection{Options 1, 2, and 3}
+py-statistics, scipy.stats, Pandas
+\subsubsection{Goals for use in design}
+	An important aspect of our project is a statistical model to determine the importance of data. With good python library and combination of machine learning training, we will get a pretty good estimate of how these data factors affect our result. Choosing a functional and fast statistical library will make our data analyzing easier and make our prediction more accurate.
+\subsubsection{Criteria being evaluated}
+The cost are all free for the three libraries. The availability is important to be considered. The speed is important to consider when choosing the libraries. We are going to use the functions a couple times, even likely in a loop that cause higher complexity. So the basic running time of functions in these libraries are important. Security is not too important since we don’t collect sensitive data from user but should be considered for the security and reliability of the system. 
+
+\subsubsection{Table comparing options}
+\begin{center}
+\begin{tabular}{||c c c c c c||}
+\hline
+Technology & Economy & Readability & Availability & Speed & Notes \\ [0.5ex]
+\hline\hline
+py-statistics & Extremely & Extremely & Cross Platform & Not Sure & Official statistics library by Python Foundation \\
+\hline
+scipy.stats & Extremely & very & Cross Platform & Not Sure & Widely popular and sponsored Open Source Project \\
+\hline
+Pandas & Extremely & very & Worldwide & Cross Platform & Sponsored Open Source Project \\ [1ex]
+\hline
+\end{tabular}
+\end{center}
+
+\subsubsection{Discussion}
+Py-statistics is a powerful library developed by python foundation. It is reliable and widely used. Most importantly, Python Foundation will keep updating it to ensure its performance and security[13]. Scipy is a widely used library that may provide some functions that others don't. Scipy also highlights its probability functions which will suit our project for predicting basketball result[14]. Scipy is sponsored open source project by ENTHOUGHT. It is very reliable and popular. Pandas is a Python data analysis Library sponsored by NUMFOCUS. The Pandas library highlights its high-performance, easy-to-use data structures and data analysis[15]. It is also very popular, widely used and actively maintained by developers. 
+\subsubsection{Selection of best option}
+All three libraries are very powerful. Our project will use py-statistics first. But the performance will need to be tested when in developing. The other two options may also be used in different context.
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
 % For figures, \caption should occur after the \includegraphics.
@@ -802,9 +864,7 @@ SciLearn is the best option for the need of our project. It is open-sourced, rel
 
 
 \section{Conclusion}
-There are many tools available which can be used to achieve the exact software product we desire. With careful consideration, we have located what we believe to be the correct tools for the job. For developing a graphical user interface which will allow students to easily and accurately interact with the module, we will be using PyGUI to develop our basic interface, Webix to provide the user with instructions on how to use the tool, and VTK to present the machine learned bracket in a way that is visually appealing. For getting the basketball data we will use sports-reference.com because of their downloadable csv files. We will store all the data using phpmyadmin which offers a nice user interface for us to work with.
-(chongxians stuff)
-
+There are many tools available which can be used to achieve the exact software product we desire. With careful consideration, we have located what we believe to be the correct tools for the job. For developing a graphical user interface which will allow students to easily and accurately interact with the module, we will be using PyGUI to develop our basic interface, Webix to provide the user with instructions on how to use the tool, and VTK to present the machine learned bracket in a way that is visually appealing. For getting the basketball data we will use sports-reference.com because of their downloadable csv files. We will store all the data using phpmyadmin which offers a nice user interface for us to work with. We will be mainly using SciKit Learn library in Python for our machine learning algorithm. Amazon Web Service is the best choice to host our project on cloud. 
 
 
 
@@ -874,10 +934,19 @@ J. Shore, “An Unconventional Review of AngularJS,” \emph{Let's Code Javascri
  “Wax GUI Toolkit,” \emph{Python}. [Online]. Available: https://wiki.python.org/moin/wax. [Accessed: 14-Nov-2016]. 
  \bibitem{Amazon Machine Learning}
  “Amazon Machine Learning,” \emph{Amazon}. [Online]. Available: https://aws.amazon.com/machine-learning/. [Accessed: 14-Nov-2016]. 
- \bibitem{Python}
+ \bibitem{SciKit}
  "SciKit Learn,Machine Learning in Python,” \emph{scikit-learn}. [Online]. Available: http://scikit-learn.org/stable/. [Accessed: 14-Nov-2016]. 
- \bibitem{Python}
+ \bibitem{Pylearn2}
  "Pylearn2 devdocumentation,” \emph{Pylearn2}. [Online]. Available: http://deeplearning.net/software/pylearn2/. [Accessed: 14-Nov-2016]. 
+ \bibitem{ONID - OSU Network ID}
+ "ONID - OSU Network ID,” \emph{Oregon State University}. [Online]. Available: http://onid.oregonstate.edu. [Accessed: 14-Nov-2016]. 
+  \bibitem{py-statistics}
+ "Python statistics — Mathematical statistics functions,” \emph{Python}. [Online]. Available: https://docs.python.org/3/library/statistics.html. [Accessed: 14-Nov-2016]. 
+   \bibitem{scipy.stats}
+ "Statistical functions (scipy.stats),” \emph{scipy.stats}. [Online]. Available: https://docs.scipy.org/doc/scipy/reference/stats.html. [Accessed: 14-Nov-2016]. 
+ \bibitem{Pandas}
+ "Python Data Analysis Library,” \emph{Pandas}. [Online]. Available: http://pandas.pydata.org. [Accessed: 14-Nov-2016]. 
+
 \end{thebibliography}
 
 % biography section
