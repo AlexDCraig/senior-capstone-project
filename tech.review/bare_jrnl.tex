@@ -637,7 +637,7 @@ Sports-reference.com is the best option because it’s free, easy to deal with a
 %\IEEEpubidadjcol
 
 \subsubsection{Options 1, 2, and 3}
-Excel, Python SQLite, and phpmyadmin
+Excel, Python SQLite, and Amazon Aurora
 \subsubsection{Goals for use in design}
 Goal is to figure out the best database option to use that will be the easiest to integrate with the website and machine learning algorithms.
 
@@ -657,7 +657,7 @@ Cost isn’t a factor is this one because they are all free or offered through O
  \hline
  Python SQLite & Free & Easy & Protected & Fast \\
  \hline
- Phpmyadmin & Free & Easy & Protected & fast \\ [1ex]
+ Amazon Aurora & Free & Easy & Protected & fast \\ [1ex]
  \hline
 \end{tabular}
 \end{center}
@@ -666,9 +666,9 @@ Cost isn’t a factor is this one because they are all free or offered through O
 
 
 \subsubsection{Discussion}
-They are all viable options to use for this project each do about the same thing except excel and phpmyadmin would be external from the machine learning python code. Both excel and phpmyadmin are both nice to use because you can search on your dataset easily. They are all very easy to interact with via python code but phpmyadmin has the big bonus of having a nice user interface for the database as well as the ability to add data very easily via csv files which are the form most of the statistics would come in. The big downside of SQLite, a database included with Python, is it creates a single file for all data per database. Other databases such as MySQL, phpmyadmin, and Oracle and Microsoft SQL Server have more complicated persistence schemes while offering additional advanced features that are useful for web application data storage.  
+They are all viable options to use for this project each do about the same thing except excel and Amazon Aurora would be external from the machine learning python code. Both excel and Amazon Aurora are both nice to use because you can search on your dataset easily. They are all very easy to interact with via python code but Amazon Aurora has the big bonus of having a nice user interface for the database as well as the ability to add data very easily via csv files which are the form most of the statistics would come in. The big downside of SQLite, a database included with Python, is it creates a single file for all data per database. Other databases such as MySQL, Amazon Aurora, and Oracle and Microsoft SQL Server have more complicated persistence schemes while offering additional advanced features that are useful for web application data storage.  
 \subsubsection{Selection of best option}
-Given that phpmyadmin has the user interface and it is very csv file friendly I am going to have to choose it for our database storage.
+Given that Amazon Aurora has the user interface and it is very csv file friendly I am going to have to choose it for our database storage.
 
 
 % ----------------------------------- Chongxian's tech-----------------------------------------------------------------
@@ -869,7 +869,7 @@ All three libraries are very powerful. Our project will use py-statistics first.
 
 
 \section{Conclusion}
-There are many tools available which can be used to achieve the exact software product we desire. With careful consideration, we have located what we believe to be the correct tools for the job. For developing a graphical user interface which will allow students to easily and accurately interact with the module, we will be using PyGUI to develop our basic interface, Webix to provide the user with instructions on how to use the tool, and VTK to present the machine learned bracket in a way that is visually appealing. For getting the basketball data we will use sports-reference.com because of their downloadable csv files. We will store all the data using phpmyadmin which offers a nice user interface for us to work with. We will be mainly using SciKit Learn library in Python for our machine learning algorithm. Amazon Web Service is the best choice to host our project on cloud. 
+There are many tools available which can be used to achieve the exact software product we desire. With careful consideration, we have located what we believe to be the correct tools for the job. For developing a graphical user interface which will allow students to easily and accurately interact with the module, we will be using PyGUI to develop our basic interface, Webix to provide the user with instructions on how to use the tool, and VTK to present the machine learned bracket in a way that is visually appealing. For getting the basketball data we will use sports-reference.com because of their downloadable csv files. We will store all the data using Amazon Aurora which offers a nice user interface for us to work with. We will be mainly using SciKit Learn library in Python for our machine learning algorithm. Amazon Web Service is the best choice to host our project on cloud. 
 
 
 
