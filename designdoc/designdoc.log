@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  2 DEC 2016 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  2 DEC 2016 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,17 +488,36 @@ ABD: EveryShipout initializing macros [1] (./designdoc.toc)
 \openout4 = `designdoc.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 479--483
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--491
+Underfull \hbox (badness 10000) in paragraph at lines 480--538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--491
+Underfull \hbox (badness 10000) in paragraph at lines 480--538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 480--538
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 542--545
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--545
 
  []
 
@@ -507,46 +526,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--491
 \pgf@layerbox@umlsd@threadlayer=\box41
 \pgf@layerboxsaved@umlsd@threadlayer=\box42
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 493.
+(Font)              <7> on input line 547.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 493.
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--527
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--527
+(Font)              <5> on input line 547.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 574--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--527
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 553--560
+Underfull \hbox (badness 10000) in paragraph at lines 574--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--560
+Underfull \hbox (badness 10000) in paragraph at lines 574--581
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 607--614
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--560
+Underfull \hbox (badness 10000) in paragraph at lines 607--614
 
  []
 
 
-Overfull \hbox (13.85405pt too wide) in paragraph at lines 592--593
+Underfull \hbox (badness 10000) in paragraph at lines 607--614
+
+ []
+
+
+Overfull \hbox (13.85405pt too wide) in paragraph at lines 646--647
 [][] 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 594--599
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 648--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--652
 
  []
 
@@ -562,22 +586,22 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 615--620
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 671--676
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--627
+Underfull \hbox (badness 10000) in paragraph at lines 677--683
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--634
+Underfull \hbox (badness 10000) in paragraph at lines 684--690
 
  []
 
-[6] [7] [8]
+[8] [9] [10]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -606,7 +630,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--812
+Underfull \hbox (badness 10000) in paragraph at lines 867--868
 []\OT1/ptm/m/n/8 J. Shore, An Un-con-ven-tional Re-view of An-gu-larJS, \OT1/pt
 m/m/it/8 Let's Code Javascript\OT1/ptm/m/n/8 , 14-Jan-2015. [On-line]. Avail-ab
 le:
@@ -657,14 +681,14 @@ Missing character: There is no ù in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-[9] (./designdoc.aux) ) 
+[11] (./designdoc.aux) ) 
 Here is how much of TeX's memory you used:
  12168 strings out of 493015
  257269 string characters out of 6133377
- 329165 words of memory out of 5000000
+ 327749 words of memory out of 5000000
  15536 multiletter control sequences out of 15000+600000
  26394 words of font info for 57 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,7n,78p,1426b,769s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on designdoc.dvi (9 pages, 84688 bytes).
+Output written on designdoc.dvi (11 pages, 90208 bytes).
