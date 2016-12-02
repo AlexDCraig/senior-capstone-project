@@ -1,0 +1,23 @@
+Team Name: Stat Champs
+Introduction:
+	Purpose: The purpose of this software requirements specification is to outline precisely what the client can expect from us as well as what we can expect to do. The audience of this document is our client, Dr. Victor Hsu, a professor of Biochemistry and Biophysics at Oregon State University.
+	Scope: Our software product is called March Madness Machine Learner. The product will provide a website equipped with a graphical user interface where a user can select from college basketball statistical categories from the current and previous seasons. Once they select their categories, the product generates a March Madness bracket which reflects which statistics the user intended to train their data on. The product is meant for Oregon State University Biochemistry and Biophysics students- that is, if used, it will be distributed to these students. However, we do not have a plan for barring any user with an internet connection from accessing this product. The objective of this product is to provide an instructional tool for OSU’s Biochemistry and Biophysics students to learn machine learning concepts by allowing them to easily train the basketball data of their specification to predict where teams will place in the NCAA March Madness Tournament. Machine learning is important for Biochemistry and Biophysics students to learn because it is used to generate things like DNA sequences. Problem is, understanding machine learning through its application to Biochemistry and Biophysics is difficult because the models that are generated are hard to interpret. This product will make it easier for these students to learn machine learning concepts because generating March Madness brackets leads to very straightforward interpretations: a team can either win or lose in each round. One important factor in understanding Machine Learning is realizing that which statistics are used to train the model influences the model- that is, some statistics may damage the model’s accuracy, while others may improve it. This product will demonstrate this fact to students by allowing them to generate as many models as they want, using as diverse of a selection of statistical categories as they want, and comparing their generated models to actual March Madness results.
+	Definitions, acronyms, and abbreviations: NCAA – National Collegiate Athletic Association. OSU -- Oregon State University. 
+	Overview: The rest of this document contains (in this order): an overall description of the product (including product perspective, product functions, user characteristics, constraints, assumptions and dependencies, apportioning of requirements), as well as specific requirements.
+Overall description:
+	Product perspective: This product is independent and self-contained. It will not be used in a larger system of instructional tools.
+	Product functions: 
+
+	User characteristics:
+
+	Constraints:
+
+	Assumptions and dependencies:
+
+Specific requirements:
+
+
+Appendixes:
+
+Index:
+
