@@ -476,11 +476,65 @@
 
 
 
-\section{Glossary}PyGUI: Graphical user interface API designed specifically for use with the Python programming language. \\
+\section{Glossary}
+PyGUI: Graphical user interface API designed specifically for use with the Python programming language. \\
 VTK: Data visualization API that will be used with the Python programming language. \\
 Client-server architecture: Website format that consists of a user sending and receiving data to a server which also sends and receives data. \\
 Webix: JavaScript API that is designed to support graphical user interfaces. \\
-
+2P = 2-Point Field Goals \\
+2P Percentage = 2-Point Field Goal Percentage\\
+2PA = 2-Point Field Goal Attempts\\
+3P = 3-Point Field Goals\\
+3P Percentage = 3-Point Field Goal Percentage\\
+3PA = 3-Point Field Goal Attempts\\
+AST = Assists\\
+AST Percentage = Assist percentage is an estimate of the percentage of teammate field goals a player assisted while he was on the floor.\\
+Award Share = The formula is (award points) / (maximum number of award points).\\ 
+BLK = Blocks \\
+BLK Percentage = Block percentage is an estimate of the percentage of opponent two-point field goal attempts blocked by the player while he was on the floor.\\
+BPM = Box Plus/Minus is a box score estimate of the points per 100 possessions that a player contributed above a league-average player, translated to an average team.\\ 
+DRB = Defensive Rebounds \\
+DRB Percentage = Defensive rebound percentage is an estimate of the percentage of available defensive rebounds a player grabbed while he was on the floor.\\
+DRtg = Defensive Rating for players and teams it is points allowed per 100 possessions. \\
+DWS = Defensive Win Shares\\
+eFG Percentage = Effective Field Goal Percentage; the formula is (FG + 0.5 * 3P) / FGA. This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal. \\
+FG = Field Goals (includes both 2-point field goals and 3-point field goals) \\
+FG Percentage = Field Goal Percentage; the formula is FG / FGA.\\
+FGA = Field Goal Attempts (includes both 2-point field goal attempts and 3-point field goal attempts)\\
+FT = Free Throws\\
+FT Percentage = Free Throw Percentage; the formula is FT / FTA.\\
+FTA = Free Throw Attempts\\
+Four Factors = Dean Oliver's "Four Factors of Basketball Success”\\
+G = Games\\
+GB = Games Behind\\
+GmSc = Game Score: was created to give a rough measure of a player's productivity for a single game. The scale is similar to that of points scored, (40 is an outstanding performance, 10 is an average performance, etc.)\\
+GS = Games Started \\
+MP = Minutes Played \\
+MOV = Margin of Victory\\
+ORtg = Offensive Rating for players it is points produced per 100 posessions, while for teams it is points scored per 100 possessions. \\
+ORB = Offensive Rebounds\\
+ORB Percentage = Offensive rebound percentage is an estimate of the percentage of available offensive rebounds a player grabbed while he was on the floor.\\
+Pace = Pace factor is an estimate of the number of possessions per 48 minutes by a team. (Note: 40 minutes is used in the calculation for the WNBA.)\\
+PER = Player Efficiency Rating The PER sums up all a player's positive accomplishments, subtracts the negative accomplishments, and returns a per-minute rating of a player's performance\\
+PF = Personal Fouls\\
+Poss = This formula estimates possessions based on both the team's statistics and their opponent's statistics, then averages them to provide a more stable estimate. \\
+PProd = Points Produced\\
+SOS = Strength of Schedule; a rating of strength of schedule. The rating is denominated in points above/below average, where zero is average\\
+SRS = Simple Rating System; a rating that takes into account average point differential and strength of schedule. \\
+STL = Steals \\
+STL Percentage = Steal Percentage is an estimate of the percentage of opponent possessions that end with a steal by the player while he was on the floor.\\
+Stops = Measure of individual defensive stops\\
+TOV = Turnovers\\
+TOV Percentage = Turnover percentage is an estimate of turnovers per 100 plays.\\
+TRB = Total Rebounds\\
+TRB Percentage = Total rebound percentage is an estimate of the percentage of available rebounds a player grabbed while he was on the floor.\\
+TS Percentage = True shooting percentage is a measure of shooting efficiency that takes into account field goals, 3-point field goals, and free throws.\\
+TSA = True Shooting Attempts\\
+Usg Percentage = Usage percentage is an estimate of the percentage of team plays used by a player while he was on the floor.\\
+Win Probability = The estimated probability that Team A will defeat Team B in a given matchup.\\
+\\
+\\
+\\
 
 \section{Designs}
 
@@ -595,11 +649,15 @@ The module needs to present instructions to the user which informs them how to u
 The most essential function of the entire module is presenting a machine learned March Madness bracket. However, the process of machine learning is completely separate from the design of the bracket which will be displayed. Once Scikit generates a machine learned model that reflects the user's chosen statistics, it must communicate to VTK what this data is, and VTK will handle the bracket generation. In order for VTK to produce a bracket for display, a number of preconditions must occur. First, the user must have read and accepted the instructions. Then, the user must have selected data produced by a database. This data must be passed to Scikit, which generates a learned model. The postconditions of this sequence diagram is that the user will have seen the March Madness bracket that results from their chosen statistics. The flow of events for the average use case is as follows: 1) The user reads and accepts the instructions 2) The user selects statistics 3) The server sends these statistics to a machine learning submodule 4) The submodule generates a model 5) The submodule passes the model to VTK 6) VTK transforms the model into a bracket 7) A collaboration of VTK, PyGUI, and the server produce this bracket for the user to view.
 \\
 \\
+
 {\large Design viewpoint 4: Collection of data for the database}
 
 {\large Design Rationale:}
 The Machine Learning algorithms we want to work with get more accurate the more examples and stats you feed into it. Therefore, for the data collection we need to include as many possible data points as possible. We will do this by collecting stats from every major stat website and also pull more advanced data from the hoop-math which breaks down each players moves into more specialized data points. For example, hoop-math with break down a player’s shots from just saying he shot a 2 pointer to telling you where the shot was and how close a defender was to him at that moment. The design to grab the stats is to manually download all the csv files I can from Sports-Reference and upload them to the database then once I am caught up with the current season I will create a python script that takes the stats from all the daily games and uploads it into the database. 
 
+\\
+\\
+\\
 {\large Design viewpoint 5: Database Design}
 Design view 4:
 Couldn’t get UML database design to post correctly.
