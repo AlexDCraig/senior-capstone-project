@@ -476,7 +476,10 @@
 
 
 
-\section{Glossary}
+\section{Glossary}PyGUI: Graphical user interface API designed specifically for use with the Python programming language. \\
+VTK: Data visualization API that will be used with the Python programming language. \\
+Client-server architecture: Website format that consists of a user sending and receiving data to a server which also sends and receives data. \\
+Webix: JavaScript API that is designed to support graphical user interfaces. \\
 
 
 \section{Designs}
@@ -515,7 +518,7 @@
 \end{sequencediagram}
  
 {\large Design Rationale:}
-The module needs a web page to operate. This web page needs to be presented in a way that is pleasing to the eye and easy to use, because our intended users are biochemists, not computer scientists. This means the page needs to be as non-esoteric as possible. To achieve this, we will be using PyGUI to format our web page. The precondition of this sequence diagram is that the user has a browser. The postcondition of this diagram are that the user is presented with a bracket that resulted from collaboration between PyGUI and VTK. The flow of events from the perspective of PyGUI is quite simplistic. While typical client-server code will allow us to transfer data back and forth between our submodules, PyGUI must make this data transmission appear as convenient as possible to the user.  
+The module needs a web page to operate. This web page needs to be presented in a way that is pleasing to the eye and easy to use, because our intended users are biochemists, not computer scientists. This means the page needs to be as non-esoteric as possible. To achieve this, we will be using PyGUI to format our web page. The precondition of this sequence diagram is that the user has a browser. The postcondition of this diagram are that the user is presented with a bracket that resulted from collaboration between PyGUI and VTK. The flow of events from the perspective of PyGUI is quite simplistic. While a typical client-server architecture will allow us to transfer data back and forth between our submodules, PyGUI must make this data transmission appear as convenient as possible to the user.  
 \\
 \\
 {\large Design viewpoint 2: Using Webix to present instructions for the module}
