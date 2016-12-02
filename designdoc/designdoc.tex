@@ -348,7 +348,9 @@
 
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
-
+\usepackage{tikz}
+\usetikzlibrary{arrows,shadows}
+\usepackage{pgf-umlsd}
 
 \begin{document}
 %
@@ -493,19 +495,117 @@
 
 \section{Designs}
 
-Identified stakeholders and design concerns
 
-Design viewpoint 1
-Design view 1
-Design Rational
+{\large Design viewpoint 1: Using PyGUI for GUI of webpage}
+\\
+\\
+\begin{center}Design view 1:\end{center}
+\begin{sequencediagram}
+\newthread[white]{u}{User}
+\newinst[3]{p}{PyGUI Formatted Web Page}
+\newinst[3]{s}{Submodules}
 
-Design viewpoint 2
-Design view 2
-Design Rational
+\begin{call}{u}{Visit web page}{p}{}
+\end{call}
 
-Design viewpoint 3
-Design view 3
-Design Rational
+\begin{call}{p}{Get statistical categories}{s}{}
+\end{call}
+
+\begin{call}{s}{Return statistical categories}{p}{}
+\end{call}
+
+\begin{call}{u}{Choose statistical categories}{p}{}
+\end{call}
+
+\begin{call}{p}{Send statistical categories}{s}{}
+\end{call}
+
+\begin{call}{s}{Return VTK formatted bracket}{p}{}
+\end{call}
+
+\begin{call}{p}{Help present VTK formatted bracket}{u}{}
+\end{call}
+ 
+\end{sequencediagram}
+ 
+{\large Design Rationale:}
+The module needs a web page to operate. This web page needs to be presented in a way that is pleasing to the eye and easy to use, because our intended users are biochemists, not computer scientists. This means the page needs to be as non-esoteric as possible. To achieve this, we will be using PyGUI to format our web page. The precondition of this sequence diagram is that the user has a browser. The postcondition of this diagram are that the user is presented with a bracket that resulted from collaboration between PyGUI and VTK. The flow of events from the perspective of PyGUI is quite simplistic. While typical client-server code will allow us to transfer data back and forth between our submodules, PyGUI must make this data transmission appear as convenient as possible to the user.  
+\\
+\\
+{\large Design viewpoint 2: Using Webix to present instructions for the module}
+\\
+\\
+\begin{center}Design view 2:\end{center}
+\begin{sequencediagram}
+\newthread[white]{u}{User}
+\newinst[3]{p}{PyGUI formatted web page}
+\newinst[3]{w}{Webix}
+ 
+\begin{call}{u}{Visit website}{p}{}
+\end{call}
+
+\begin{call}{p}{Ask for instructions}{w}{}
+\end{call}
+
+\begin{call}{w}{Return instructions}{p}{}
+\end{call}
+
+\begin{call}{p}{Present webix formatted instructions}{u}{}
+\end{call}
+
+\begin{call}{u}{Click accept}{p}{}
+\end{call}
+
+\begin{call}{p}{Present module}{u}{}
+\end{call}
+
+\end{sequencediagram}
+ 
+{\large Design Rationale:}
+The module needs to present instructions to the user which informs them how to use the service. These instructions should appear seamlessly and should be visually inoffensive. Our main aim is reducing the chance of these instructions appearing unclear and thus maximizing utility. To achieve this, we will be using Webix, which will interact with our client/server code as well as with PyGUI. The precondition of this sequence diagram is that the user has a browser and has loaded the web page. The postconditions are that the user has seen the instructions (hopefully having read them) and has clicked accept to begin the service. The flow of events of the average use case are as follows: 1) the user visits the web page 2) the user is presented with instructions on properly using the module 3) the user reads the instructions 4) the user clicks accept 5) the module is presented. Note that the PyGUI formatted page in this diagram is a bit vague. PyGUI, of course, cannot handle the entire module. The web page will be calling a number of other technologies to present the module, but these technologies are not necessary when only considering how Webix will be used. 
+\\
+\\
+{\large Design viewpoint 3: Generating bracket using VTK}
+\\
+\\
+\begin{center}Design view 3:\end{center}
+
+\begin{sequencediagram}
+\newthread[white]{u}{User}
+\newinst[3]{py}{PyGUI formatted web page}
+\newinst[3]{sci}{Scikit}
+\newinst[3]{vtk}{VTK}
+ 
+\begin{call}{u}{Visit site}{py}{}
+\end{call}
+
+\begin{call}{u}{Click button}{py}{}
+\end{call}
+
+\begin{call}{py}{Provide stat categories from db}{u}{}
+\end{call}
+
+\begin{call}{u}{Send chosen stats}{py}{}
+\end{call}
+
+\begin{call}{py}{Send chosen stats from db}{sci}{}
+\end{call}
+
+\begin{call}{sci}{Send model}{vtk}{}
+\end{call}
+
+\begin{call}{vtk}{Send bracket}{py}{}
+\end{call}
+
+\begin{call}{py}{Present bracket}{u}{}
+\end{call}
+
+\end{sequencediagram}
+ 
+{\large Design Rationale:}
+The most essential function of the entire module is presenting a machine learned March Madness bracket. However, the process of machine learning is completely separate from the design of the bracket which will be displayed. Once Scikit generates a machine learned model that reflects the user's chosen statistics, it must communicate to VTK what this data is, and VTK will handle the bracket generation. In order for VTK to produce a bracket for display, a number of preconditions must occur. First, the user must have read and accepted the instructions. Then, the user must have selected data produced by a database. This data must be passed to Scikit, which generates a learned model. The postconditions of this sequence diagram is that the user will have seen the March Madness bracket that results from their chosen statistics. The flow of events for the average use case is as follows: 1) The user reads and accepts the instructions 2) The user selects statistics 3) The server sends these statistics to a machine learning submodule 4) The submodule generates a model 5) The submodule passes the model to VTK 6) VTK transforms the model into a bracket 7) A collaboration of VTK, PyGUI, and the server produce this bracket for the user to view.
+\\
+\\
 
 Design viewpoint 4
 Design view 4
