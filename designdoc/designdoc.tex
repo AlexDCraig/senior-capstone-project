@@ -476,9 +476,6 @@
 
 
 
-\section{References}
-
-
 \section{Glossary}
 
 
@@ -595,26 +592,20 @@ The module needs to present instructions to the user which informs them how to u
 The most essential function of the entire module is presenting a machine learned March Madness bracket. However, the process of machine learning is completely separate from the design of the bracket which will be displayed. Once Scikit generates a machine learned model that reflects the user's chosen statistics, it must communicate to VTK what this data is, and VTK will handle the bracket generation. In order for VTK to produce a bracket for display, a number of preconditions must occur. First, the user must have read and accepted the instructions. Then, the user must have selected data produced by a database. This data must be passed to Scikit, which generates a learned model. The postconditions of this sequence diagram is that the user will have seen the March Madness bracket that results from their chosen statistics. The flow of events for the average use case is as follows: 1) The user reads and accepts the instructions 2) The user selects statistics 3) The server sends these statistics to a machine learning submodule 4) The submodule generates a model 5) The submodule passes the model to VTK 6) VTK transforms the model into a bracket 7) A collaboration of VTK, PyGUI, and the server produce this bracket for the user to view.
 \\
 \\
+{\large Design viewpoint 4: Collection of data for the database}
 
-Design viewpoint 4
-Design view 4
-Design Rational
+{\large Design Rationale:}
+The Machine Learning algorithms we want to work with get more accurate the more examples and stats you feed into it. Therefore, for the data collection we need to include as many possible data points as possible. We will do this by collecting stats from every major stat website and also pull more advanced data from the hoop-math which breaks down each players moves into more specialized data points. For example, hoop-math with break down a player’s shots from just saying he shot a 2 pointer to telling you where the shot was and how close a defender was to him at that moment. The design to grab the stats is to manually download all the csv files I can from Sports-Reference and upload them to the database then once I am caught up with the current season I will create a python script that takes the stats from all the daily games and uploads it into the database. 
 
-Design viewpoint 5
-Design view 5
-Design Rational
+{\large Design viewpoint 5: Database Design}
+Design view 4:
+Couldn’t get UML database design to post correctly.
+{\large Design Rationale:}
 
-Design viewpoint 6
-Design view 6
-Design Rational
+For designing the database I have decided to have multiple connected databases. The fist will be a running tally for all the player’s stats, everything from FG percentage to player efficiency and more. The second will be all the team game logs with their opponent’s stats for that game as well. That way we can do look ups for past matchups and analyze how both teams and players did against each other and apply that for future matchups. Then for the final database that will be connected to the game logs will be the advanced game player stats for example it will have play by play stats like who passed to who, when and who shot the ball, from where, and who was guarding him.  The user will be able to choose between either all three databases in there bracket analysis or just two or even one.  Each bracket should be able to bring in stats that should change the outcome of the machine learning predictions.
 
-Design viewpoint 7
-Design view 7
-Design Rational
 
-Design viewpoint 8
-Design view 8
-Design Rational
+
 
 
 
