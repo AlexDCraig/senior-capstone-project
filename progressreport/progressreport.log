@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.14)  3 DEC 2016 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.14)  3 DEC 2016 20:47
 entering extended mode
 **./progressreport.tex
 (progressreport.tex
@@ -1002,20 +1002,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `progressreport.toc'.
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
  (progressreport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
-Package rerunfilecheck Info: File `progressreport.out' has not changed.
-(rerunfilecheck)             Checksum: 41CE476CB96B46433E0515678F768CCB;277.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+
+
+Package rerunfilecheck Warning: File `progressreport.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `progressreport.out':
+(rerunfilecheck)             Before: 41CE476CB96B46433E0515678F768CCB;277
+(rerunfilecheck)             After:  3B8CC8FD6F8257D73F6C2AC8EAF81F54;290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
  14998 strings out of 493334
  247026 string characters out of 3130654
- 347827 words of memory out of 3000000
+ 350827 words of memory out of 3000000
  18295 multiletter control sequences out of 15000+200000
  6857 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1024,7 +1031,7 @@ Here is how much of TeX's memory you used:
 cm/cmbx10.pfb><C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on progressreport.pdf (3 pages, 54781 bytes).
+Output written on progressreport.pdf (3 pages, 60061 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)
