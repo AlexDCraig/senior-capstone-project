@@ -1,10 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.14)  14 NOV 2016 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=latex 2016.5.22)  30 NOV 2016 13:37
 entering extended mode
-**./bare_jrnl.tex
-(bare_jrnl.tex
-LaTeX2e <2016/03/31> patch level 3
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\ieeetran\IEEEtran.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bare_jrnl.tex
+(./bare_jrnl.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
@@ -17,12 +19,12 @@ Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
-("C:\Users\eecs\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
--- Using PDF output.
+-- Using DVI output.
 \@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen106
@@ -112,7 +114,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count93
 \@IEEEtranrubishbin=\box27
-) (bare_jrnl.aux)
+) (./bare_jrnl.aux)
 \openout1 = `bare_jrnl.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 353.
@@ -129,32 +131,39 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 353.
 LaTeX Font Info:    ... okay on input line 353.
 
 -- Lines per column: 58 (exact).
-! I can't write on file `bare_jrnl.pdf'.
-Please type another file name for output: techreview
-[1{C:/Users/eecs/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[1] (./bare_jrnl.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `bare_jrnl.toc'.
+
+ [2]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 486.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 486.
 
-Overfull \hbox (25.35632pt too wide) in paragraph at lines 486--497
- [] 
- []
-
-[2]
-Overfull \hbox (33.16647pt too wide) in paragraph at lines 525--536
- [] 
- []
-
-
-Overfull \hbox (25.09563pt too wide) in paragraph at lines 562--573
+Overfull \hbox (25.35632pt too wide) in paragraph at lines 490--501
  [] 
  []
 
 [3]
+Overfull \hbox (33.16647pt too wide) in paragraph at lines 529--540
+ [] 
+ []
+
+
+Overfull \hbox (25.09563pt too wide) in paragraph at lines 566--577
+ [] 
+ []
+
+[4]
+Overfull \hbox (75.04482pt too wide) in paragraph at lines 607--618
+ [] 
+ []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
@@ -164,6 +173,22 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+[5]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+ [6]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Overfull \hbox (31.34496pt too wide) in paragraph at lines 757--768
+ [] 
+ []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -192,7 +217,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
+Underfull \hbox (badness 10000) in paragraph at lines 933--934
 []\OT1/ptm/m/n/8 J. Shore, An Un-con-ven-tional Re-view of An-gu-larJS, \OT1/pt
 m/m/it/8 Let's Code Javascript\OT1/ptm/m/n/8 , 14-Jan-2015. [On-line]. Avail-ab
 le:
@@ -216,23 +241,45 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-[4] (bare_jrnl.aux) ) 
-Here is how much of TeX's memory you used:
- 1055 strings out of 493334
- 19311 string characters out of 3130654
- 81451 words of memory out of 3000000
- 4651 multiletter control sequences out of 15000+200000
- 37348 words of font info for 67 fonts, out of 3000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 26i,6n,19p,1184b,152s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/fontname/8r.enc}<C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmb8a.pfb><C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/urw/times/utmr8a.pfb><C:/Users/eecs/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/urw/times/utmri8a.pfb>
-Output written on techreview.pdf (4 pages, 57009 bytes).
-PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no î in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+[7] (./bare_jrnl.aux)
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1052 strings out of 493015
+ 19382 string characters out of 6133377
+ 81765 words of memory out of 5000000
+ 4670 multiletter control sequences out of 15000+600000
+ 26394 words of font info for 57 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 26i,6n,19p,1626b,152s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on bare_jrnl.dvi (7 pages, 44128 bytes).
