@@ -1,6 +1,7 @@
 \documentclass[letterpaper, 10pt,titlepage]{article}
 
-\usepackage{graphicx}                                        
+\usepackage{graphicx} 
+\graphicspath{ {images/} }                                       
 \usepackage{amssymb}                                         
 \usepackage{amsmath}                                         
 \usepackage{amsthm}                                          
@@ -8,10 +9,7 @@
 \usepackage{float}
 \usepackage{color}
 \usepackage{url}
-\usepackage{pst-gantt}
 \usepackage[letterpaper, margin=0.75in]{geometry}
-\usepackage{balance}
-\usepackage[TABBOTCAP, tight]{subfigure}
 \usepackage{enumitem}
 \usepackage{pstricks, pst-node}
 \usepackage{hyperref}
@@ -43,7 +41,7 @@
 
 \begin{center}
 
-Oregon State University Computer Science Senior Design Fall 2016
+Oregon State University Computer Science Senior Design Winter 2016
 \bigbreak
 Progress Report
 \bigbreak
@@ -54,7 +52,7 @@ Team Name: Stat Champs
 \vspace{3.0cm}
 Abstract
 \bigbreak
-The application of machine learning to Biochemistry and Biophysics has enabled researchers in this field to make remarkable discoveries, such as the generation of new DNA sequences. However, students of Biochemistry and Biophysics do not get the opportunity to learn machine learning. Dr. Victor Hsu of the Oregon State University Biochemistry and Biophysics department has commissioned the Stat Champs to produce an instructional module to give his students the chance to familiarize themselves with machine learning. The software product the Stats Champs have agreed to develop is a web page that allows students to train a machine learning model based on the college basketball statistics and machine learning algorithm of their choosing in order to produce a March Madness bracket. This will help students understand how machine learning algorithms produce models and how inclusion or exclusion of certain data can influence such models. Over the course of Fall term 2016, the Stat Champs have developed materials such as design documents and technology reviews in order to prepare for the engineering of this module. This report comprehensively describes the progress the Stat Champs have made thus far.
+The application of machine learning to Biochemistry and Biophysics has enabled researchers in this field to make remarkable discoveries, such as the generation of new DNA sequences. However, students of Biochemistry and Biophysics do not get the opportunity to learn machine learning. Dr. Victor Hsu of the Oregon State University Biochemistry and Biophysics department has commissioned the Stat Champs to produce an instructional module to give his students the chance to familiarize themselves with machine learning. The software product the Stats Champs have agreed to develop is a web page that allows students to train a machine learning model based on the college basketball statistics and machine learning algorithm of their choosing in order to produce a March Madness bracket. This will help students understand how machine learning algorithms produce models and how inclusion or exclusion of certain data can influence such models. Over the course of Fall term 2016, the Stat Champs developed materials such as design documents and technology reviews in order to prepare for the engineering of the module. Then, in Winter term 2017, the Stat Champs began the software development phase of this project. This report comprehensively describes the progress thus made on this project, as of mid-February 2017.
 \newpage
 \end{center}
 
@@ -62,31 +60,38 @@ The application of machine learning to Biochemistry and Biophysics has enabled r
 
 \newpage
 \section{Introduction}
-This report chronicles the progress the Stat Champs have made on developing the machine learning instructional tool. As of the end of Fall term 2016, the progress that has been made consists of a project statement, a requirements document, a design document, a technology review, and this progress report. The remaining sections of this report are devoted to each of the individual members of the Stat Champs to describe their experiences this term as well as their contributions to these documents.
+	This report chronicles the progress the Stat Champs have made on developing the machine learning instructional tool. In Fall term 2016, the progress that had been made was a project statement, a requirements document, a design document, a technology review, and a progress report. In Winter term 2017, the team made progress on the engineering of the module. The remaining sections of this report are devoted to each of the individual members of the Stat Champs to describe their experiences this term as well as their contributions to the software product.
 \section{Progress Descriptions}
 \subsection{Alex Hoffer}
-\par In week one, we were assigned to the "Machine Learn Your Way to March Madness Glory" project proposed by our client Dr. Victor Hsu. During week two, we met with Dr. Hsu to get clarity on the specific details of the project. A synopsis of the project can be found in the Abstract of this document. 
-\par After meditating on what we learned from our exchange with Dr. Hsu, we wrote a rough draft of our project statement. In week three, we refined this document and sent it to Dr. Hsu for his approval. The project statement consisted of an abstract, a problem definition, a proposed solution, and performance metrics. We were all relatively new to LaTex and so we had some issues formatting this document correctly. Dr. Hsu felt that we needed to change several things in the document, so in week four, we made these changes and re-submitted it.
-\par During week five, we began developing our project requirements document. I made individual progress by writing the document in Word. This document was formatted using the IEEE standard and thus consisted of an introduction, an overall description, specific requirements, and a Gantt chart. My individual contribution included writing the introduction, an overall description, and the specific requirements. The next week, we adapted my writing to a LaTex file developed by Jake and added a Gantt chart that Chongxian made. Then, we submitted the final product to Dr. Hsu and got his approval. 
-\par When week seven came, we revised and re-submitted our project requirements document because Dr. Winters felt it was too vague. Individually, we made progress on our sections of the technology review document. In week eight, we each individually completed our technology review sections and compiled them into one large LaTex formatted document. We faced some difficulty in coming up with responsibilities for each of us and realizing what technologies would be best suited to satisfy said responsibilities. My responsibilities were centered around the usability and appearance of the system. They were 1) the graphical user interface of the web page 2) a presentation of instructions to the user of the module and 3) the presentation of the machine learned bracket. After careful consideration, I landed on using PyGUI for 1), Webix for 2), and VTK for 3). 
-\par For week nine, we discussed as a team what approach we should take to the design document, and each individually landed on different software design templates. We also discussed how we would record ourselves for the progress report. One solution we considered was renting out a microphone from the library. As usual, we had some issues with LaTex formatting.
-\par In the final two weeks, we finished and submitted our design document. I used sequence diagrams to describe the functionality of the technologies I selected. In my rationale, I included the average use case for each of my responsibilities.  It was difficult getting LaTex to properly generate the sequence diagrams, particularly because the packages I installed were being stubborn. Then, we got together and recorded a progress report. Finally, we each wrote our section of this document and compiled it together.
 
+\subsubsection{Project Purposes and Goals}
+\par Our project was given to us by Dr. Victor Hsu of the Biochemistry and Biophysics department at Oregon State University. The purpose of this project is to demonstrate to Dr. Hsu's students how common machine learning algorithms generate models, and how the inclusion or exclusion of data can influence these models. Using an event like the March Madness tournament that produces binary outcomes (i.e. each team can only win or lose) facilitates the learning process by making the machine learned models easy to read, understand, and manipulate through the inclusion or exclusion of data. Thus, our goal is to help Dr. Hsu's students learn how machine learning works, and the degree to which our module is successful is predicted by whether or not the average student can begin to understand machine learning through our demonstration. 
 
-Retrospective:
-\begin{center}
-    \begin{tabular}{ | l | l | p{3cm} |}
-    \hline
-    Positives & Deltas & Actions \\ \hline
-    Finished project statement and requirements document & Need to learn basic Python & Will take Python tutorials over winter break \\ \hline
-    Finished design document and progress report & Need to learn basic JavaScript & Will take JavaScript tutorials over winter break \\ \hline
-    We all learned LaTex & Need to learn machine learning algorithms & Will check online to understand the  machine learning algorithms Chongxian wants to use \\ \hline
-    Prepared for engineering phase & Need to learn my selected technologies & Will read the documentation for my technologies over winter break \\ \hline
-    \end{tabular}
-\end{center}
+\subsubsection{Brief recap of Alex's responsibilities}
+\par As a team, we discussed each of our three responsibilities in Fall term 2016. My three responsibilities center around the graphical user interface (hereafter referred to as GUI) of the module. For me, the first responsibility was to host the web page and develop the general GUI to aid users in navigating the various sections of the website. Information pertaining to this first responsibility can be found in the subsection "Responsibility 1". Responsibility two was to present instructions on how to use the module before the machine learning module itself was presented. I have expanded this responsibility to include the development of two additional subsections of the site. These two additional, unplanned subsections are a Purpose page and an About page. These pages will be described in detail in the subsection "Responsibility 2", and my additions to my original second responsibility will be noted in a modified Technology Review document for the purpose of project documentation. My third responsibility was to take the data generated by Chongxian's machine learning algorithms and produce a March Madness bracket. More on the progress on this responsibility can be found in the section "Where Alex is Currently At in the Project". 
+   
+\subsubsection{Responsibility 1}
+\par My first responsibility was to host the web page and develop the GUI for the project so that users can navigate through the website. Specifically, this responsibility consisted of four tasks. First, I hosted the website on my public_html folder that is provided to me by the Engineering department. Then, I had to produce HTML. That is, I had to construct the blueprints for what the site should look like. This consisted of things like a banner that contained links to different parts of the site, such as Home, Instructions, Module, Purpose, and About. Other than the banner, I added a title for the page to appear in the browser, the use of HTML divs, lists, sections, and other common tags to organize our website, which is just one big page, into logical chunks that correspond to the different features our website offers. While I established the parts of the site like Home, Instructions, etc., it was not until the second responsibility (which has its own section of this report dedicated to it) that I modified these in any way. My next task of this first responsibility was to produce CSS. Since my main motive in my contributions to this project were to ensure the usability of the module, it is only natural that I used CSS to customize the HTML tags. Without CSS, a website looks ugly. I added CSS that I believed would improve the user's experience with the website, because I felt that without a clean, readable interface, there would be unnecessary difficulties within the usage of the site that would hamper our target population's ability to learn machine learning. In other words, the hardest part to understand about this module should be the machine learning algorithms themselves, not the design that leads to using the module. The third task within this responsibility was to produce JavaScript. Without JavaScript, this page would be clunky and unresponsive. All moderately usable websites in our current era utilize JavaScript to make pages fun to use and to reduce the need for users to re-load the website to experience all features of the page, which serendipitiously also reduces the demand on the Engineering server the site is hosted on, which means more users can access our website at once. The specifics of the JavaScript contribution include making the individual items on the banner mentioned above light up when a mouse hovers over them, which helps keep the user informed about where they are in the web page. These list items located on the banner were also clickable, and when clicked, lead to the specific section of the page which its title referred to. This design decision was yet another opportunity to improve page usability by providing an intuitive way for users to navigate through the site, as well as reducing the load on the server by requiring fewer page refreshes. Therefore, the three technologies I required to fully implement this first responsibility were HTML, CSS, and JavaScript. The only problems I encountered in using these three technologies came from JavaScript, which I find to be a perplexing and complicated language. The use of JavaScript tutorials, programmer message boards, and documentation eased my woes in this dimension and enabled me to produce a GUI for our website that looks clean and understandable and is rewarding to interact with.
+\includegraphics[width=\textwidth]{dv.jpg}
+A screenshot image of the home page of our website. Images of each other section of the page can be found in the "Responsibility 2" section.
 
+\subsubsection{Responsibility 2}
+My second responsibility was to present instructions to the user on how to use the module before the module itself is presented. However, I expanded this responsibility after I developed the GUI in my first responsibility to encompass not only a section of the page devoted to the instructions, but also sections devoted to our purpose, about us, and the module itself. The instructions are thus far incomplete because we have not been able to get our machine learning module working (the responsibilities for the machine learning module functionality lie within other group mates' sections). There is currently a section of the page devoted to the module itself, which is also, given the incomplete status of the module, not occupied by anything meaningful. However, I have written the Purpose section (which encapsulates descriptions of this project's purpose that can be read in my section "Project Purposes and Goals", as well as the About Us section, which simply describes who we are and how to reach us if need be. The development of these sections was easy, since I merely built upon the GUI that I developed in my first responsibility. Therefore, through the combined magic of CSS and JavaScript I was able to produce a clean interface for all of these sections of our website. A particularly nice feature of note that was made possible by these two technologies is a button located at the bottom of each section that lit up when a mouse hovered over it and, if clicked, bounced the user on down to the next logical section of the website. The content of these sections can be found in images presented below.
 
+\includegraphics[width=\textwidth]{Instructions.jpg}
+A screenshot image of the Instructions page of our website. Note that it remains incomplete until the module is created.
 
+\includegraphics[width=\textwidth]{Module.jpg}
+A screenshot image of the Module page. It awaits the completion of Chongxian's machine learning routines.
+
+\includegraphics[width=\textwidth]{Purpose.jpg}
+A screenshot image of the Purpose page, which describes why we are pursuing this project.
+
+\includegraphics[width=\textwidth]{About.jpg}
+A screenshot image of the About page, which describes who we are.
+
+\subsubsection{Where Alex is currently at in the project}
+\par I have two out of my three responsibilities completed, with my third contingent upon the fulfillment of my partners' responsibilities. Once we have a machine learning module, I can begin developing a data presentation feature to produce a bracket. Once this responsibility is completed, we should be done with the project.
 
 \subsection{Chongxian Chen}
 \par At beginning of the term, we were selected for Machine Learning to March Madness Glory project. After confirming the members, we quickly set up meeting with our client.
@@ -119,22 +124,5 @@ During week seven we again revised our project requirements document because it 
 \par
 In the final two weeks we did our design document which described the functionality of the technologies we chose in the technical review. For the design document I ran into issues on how to format and make the glossary look good I also could not get the UML diagrams to load correctly in Latex. We also wrote and recorded the progress report.
 \par
-
-Retrospective:
-\begin{center}
-    \begin{tabular}{ | l | l | p{3cm} |}
-    \hline
-    Positives & Deltas & Actions \\ \hline
-    Got more comfortable with Latex & Need to learn Python & Will take Python tutorials on code academy \\ \hline
-    Got a good understanding of the project & Need to learn more about Amazon AWS & Read AWS documentation and play around over winter break \\ \hline
-    Re learned SQL & Need to learn machine learning algorithms & Will check online to understand the machine learning algorithms Chongxian wants to use \\ \hline
-    Finished all documents & Need to verify stats & Average all duplicate stats \\ \hline
-    \end{tabular}
-\end{center}
-
-
-
-
-
 
 \end{document}
