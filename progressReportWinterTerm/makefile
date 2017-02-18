@@ -1,9 +1,8 @@
 TEX=progressreport
 
 pdf: ${TEX}.tex 
-	latex $(TEX).tex
-	dvips -R -Poutline -t letter ${TEX}.dvi -o ${TEX}.ps
-	ps2pdf ${TEX}.ps
+	pdflatex $(TEX).tex
+
 
 pdf-print: ps
 	ps2pdf -dColorConversionStrategy=/LeaveColorUnchanged -dPDFSETTINGS=/printer ${filename}.ps
