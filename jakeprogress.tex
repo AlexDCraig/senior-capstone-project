@@ -1,0 +1,89 @@
+\documentclass[letterpaper, 10pt,titlepage]{article}
+
+\usepackage{graphicx} 
+\graphicspath{ {images/} }                                       
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+\usepackage{url}
+\usepackage[letterpaper, margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{pstricks, pst-node}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{underscore}
+ \usepackage{url}
+\hypersetup{
+  colorlinks = true,
+  linkcolor  = black
+}
+
+\setcounter{secnumdepth}{4}
+\def\name{Jake Smith}
+
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {Problem Statement},
+  pdftitle = {Capstone Project},
+  pdfsubject = {Capstone Project},
+  pdfpagemode = UseNone
+}
+
+\renewcommand*\contentsname{Table of Contents}
+
+
+\begin{document}
+
+\begin{center}
+
+Oregon State University Computer Science Senior Design Winter 2016
+\bigbreak
+Progress Report
+\bigbreak
+By Jake Smith
+\bigbreak
+Team Name: Stat Champs
+\bigbreak
+\vspace{3.0cm}
+Abstract
+\bigbreak
+The application of machine learning to Biochemistry and Biophysics has enabled researchers in this field to make remarkable discoveries, such as the generation of new DNA sequences. However, students of Biochemistry and Biophysics do not get the opportunity to learn machine learning. Dr. Victor Hsu of the Oregon State University Biochemistry and Biophysics department has commissioned the Stat Champs to produce an instructional module to give his students the chance to familiarize themselves with machine learning. The software product the Stats Champs have agreed to develop is a web page that allows students to train a machine learning model based on the college basketball statistics and machine learning algorithm of their choosing in order to produce a March Madness bracket. This will help students understand how machine learning algorithms produce models and how inclusion or exclusion of certain data can influence such models. Over the course of Fall term 2016, the Stat Champs developed materials such as design documents and technology reviews in order to prepare for the engineering of the module. Then, in Winter term 2017, the Stat Champs began the software development phase of this project. This report comprehensively describes the progress thus made on this project, as of mid-February 2017.
+\newpage
+\end{center}
+
+\tableofcontents
+
+\newpage
+\section{Introduction}
+	This report chronicles the progress the Stat Champs have made on developing the machine learning instructional tool. In Fall term 2016, the progress that had been made was a project statement, a requirements document, a design document, a technology review, and a progress report. In Winter term 2017, the team made progress on the engineering of the module.
+\section{Progress Description}
+\subsection{Jake Smith}
+
+\subsubsection{Project Purposes and Goals}
+\par Our project was given to us by Dr. Victor Hsu of the Biochemistry and Biophysics department at Oregon State University. The purpose of this project is to demonstrate to Dr. Hsu's students how common machine learning algorithms generate models, and how the inclusion or exclusion of data can influence these models. Using an event like the March Madness tournament that produces binary outcomes (i.e. each team can only win or lose) facilitates the learning process by making the machine learned models easy to read, understand, and manipulate through the inclusion or exclusion of data. Thus, our goal is to help Dr. Hsu's students learn how machine learning works, and the degree to which our module is successful is predicted by whether or not the average student can begin to understand machine learning through our demonstration. 
+
+\subsubsection{Current progress status}
+\par This term we did the bulk of our development. I gathered the regular season stats so George could write the machine learning code and train on the datasets I provided. I am still collecting stats for the march maddness tourny for possible future implementations. As of right now we have completed almost all our tasks, we still need to make the webpage look nicer and try to get the run time of the scripts down to a resonable time. We are flirting with the idea of adding multiple different machince lerning scripts so the students have more options to choose and play around with.
+
+\subsubsection{Issues we had}
+\par We had multiple issues this term while trying to implement the scripts into the webpage. The first being that we could not run our scripts on the oregon state servers because python scripts are not allowed. I spent a very long time trying to get it to work on our servers before asking around and figuring that out. The next issue was trying to configure the AWS servers to be able to run our scripts and host the webpage. The hardest part was installing all the plugins and add-ons correctly but after reading way to much documentation we figured it out. A minor issue we are still dealing with is how long it takes the AWS servers to run our code and generate the bracket right now its around two minutes and we are trying to get it down to under a minute by refactoring our code to be more efficent.
+
+\subsubsection{Retrospective}
+
+
+\subsubsection{Member Evaluation}
+Alex: 
+\par Alex is by far the best writer in the group so his role has been mostly the writing of the documents and the poster.  He has done a lot and always gets everything done very quickly and done well.  He is not as technical as George and I so I think we found him the perfect role. Nothing to complain about, as he has been an ideal member to work with. I would say with all the writing he has done he has probably done the most for the group.
+
+Chongxian: 
+\par George has been challenging to work with as he took a very long time to get started with any of his duties causing us to feel rushed to implement the final result. As far as his contributions go he has probably done the least in the group because I have sent him most what his responsibilities are like the scripts. He did get the AWS serves set up though. He is also the most technical person in our group. 
+
+\par I believe overall we work fine as a team. We could have made it a lot easier on ourselves if we would have started development earlier.  The first term or so it felt like Alex was doing pretty much everything because my duties were a slow process waiting for the games to be played and most of the first term was writing which Alex is by far the best at.
+
+
+\end{document}
