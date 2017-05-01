@@ -3,7 +3,8 @@ This tool
 """
 import pandas as pd
 import math
-from sklearn import model_selection, linear_model, svm
+from sklearn import model_selection, linear_model, svm, naive_bayes
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
 import csv
 import random
 import sys
@@ -229,6 +230,12 @@ if __name__ == "__main__":
     	elif sys.argv[1] == '5':
     		print("You choose svm sigmoid to be the model")
     		model = svm.SVC(gamma=0.001, C=100., probability=True, kernel='sigmoid')
+        elif sys.argv[1] == '6':
+            print("You choose Niave Bayes Gaussian to be the model")
+            model = GaussianNB()
+        elif sys.argv[1] == '7':
+            print("You choose Niave Bayes multinomial models to be the model")
+            model = MultinomialNB()
         else:
             model = linear_model.LogisticRegression()
             print("You choose linear logistic regression to be the model")  

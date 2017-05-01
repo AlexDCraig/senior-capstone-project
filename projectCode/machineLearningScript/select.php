@@ -10,6 +10,8 @@
           <td><label>Multiple Selection for Factors to be Considered in March Madness Prediction</label>&nbsp;</td>
           <td><select name="model" size="5" tabindex="1" required>
             <option value="1">Linear Logistic Regression</option>
+            <option value="6">Naive Bayes Gaussian</option>
+            <option value="7">Naive Bayes Multinomial</option>
             <option value="2">SVM RBF</option>
             <option value="3">SVM Linear</option>
             <option value="4">SVM Poly</option>
@@ -36,7 +38,10 @@
     </form>
 	
 <br>
-Note: It takes about 3 minutes in average to generate the new prediction picture in a free Amazon Server. It takes longer for SVM to build its model. Please wait patiently in after submitting your choice.
+
+Note: It takes about 3 minutes in average to generate the new prediction picture in a free Amazon Server. It takes "a decade" for SVM to build its model on this server. Please wait patiently in after submitting your choice and don't use SVM.
+<br>
+Please use Linear Regression and Naive Bayes only because they are faster.
 <br>
 <br>
 <br>
