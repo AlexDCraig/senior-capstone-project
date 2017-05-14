@@ -5,10 +5,10 @@
 \contentsline {subsection}{\numberline {2.3}Problems that have impeded my progress}{3}
 \contentsline {subsection}{\numberline {2.4}Particularly interesting pieces of code}{4}
 \contentsline {subsection}{\numberline {2.5}Images from my parts of the project}{4}
-\contentsline {section}{\numberline {3}Chongxian}{9}
-\contentsline {subsection}{\numberline {3.1}Where Chongxian is At On the Project}{9}
-\contentsline {subsection}{\numberline {3.2}What Chongxian Has Left To Do}{9}
-\contentsline {subsection}{\numberline {3.3}Problems that have impeded my progress}{9}
-\contentsline {subsection}{\numberline {3.4}Particularly interesting pieces of code}{10}
-\contentsline {subsection}{\numberline {3.5}Images from my parts of the project}{10}
-\contentsline {section}{\numberline {4}Jacob}{12}
+\contentsline {section}{\numberline {3}Chongxian}{7}
+\contentsline {subsection}{\numberline {3.1}Where Chongxian is At On the Project}{7}
+\contentsline {subsection}{\numberline {3.2}What Chongxian Has Left To Do}{7}
+\contentsline {subsection}{\numberline {3.3}Problems that have impeded my progress}{7}
+\contentsline {subsection}{\numberline {3.4}Particularly interesting pieces of code}{8}
+\contentsline {subsection}{\numberline {3.5}Images from my parts of the project}{8}
+\contentsline {section}{\numberline {4}Jacob}{10}

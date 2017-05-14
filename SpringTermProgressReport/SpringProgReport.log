@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 MAY 2017 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 MAY 2017 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -397,76 +397,77 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: images/dv.jpg Graphic file (type jpg)
  <use images/dv.jpg>
 Package pdftex.def Info: images/dv.jpg used on input line 149.
-(pdftex.def)             Requested size: 501.85417pt x 301.11691pt.
+(pdftex.def)             Requested size: 404.71353pt x 227.64067pt.
 
 <images/Instructions.jpg, id=23, 963.6pt x 542.025pt>
 File: images/Instructions.jpg Graphic file (type jpg)
 
 <use images/Instructions.jpg>
 Package pdftex.def Info: images/Instructions.jpg used on input line 156.
-(pdftex.def)             Requested size: 501.86887pt x 301.13344pt.
- [5 <./images/dv.jpg>]
-<images/Module.jpg, id=27, 963.6pt x 542.025pt>
+(pdftex.def)             Requested size: 404.71353pt x 227.64894pt.
+ <images/Module.jpg, id=24, 963.6pt x 542.025pt>
 File: images/Module.jpg Graphic file (type jpg)
- <use images/Module.jpg>
-Package pdftex.def Info: images/Module.jpg used on input line 163.
-(pdftex.def)             Requested size: 501.86887pt x 301.13344pt.
 
-[6 <./images/Instructions.jpg>]
-<images/Purpose.jpg, id=31, 963.6pt x 542.025pt>
+<use images/Module.jpg>
+Package pdftex.def Info: images/Module.jpg used on input line 163.
+(pdftex.def)             Requested size: 404.71353pt x 227.64894pt.
+ [5 <./images/dv.jpg> <./images/Instructions.jpg>]
+<images/Purpose.jpg, id=28, 963.6pt x 542.025pt>
 File: images/Purpose.jpg Graphic file (type jpg)
  <use images/Purpose.jpg>
 Package pdftex.def Info: images/Purpose.jpg used on input line 170.
-(pdftex.def)             Requested size: 501.86887pt x 301.13344pt.
+(pdftex.def)             Requested size: 404.71353pt x 227.64894pt.
 
-[7 <./images/Module.jpg>] <images/About.jpg, id=36, 963.6pt x 542.025pt>
+<images/About.jpg, id=29, 963.6pt x 542.025pt>
 File: images/About.jpg Graphic file (type jpg)
-
-<use images/About.jpg>
+ <use images/About.jpg>
 Package pdftex.def Info: images/About.jpg used on input line 177.
-(pdftex.def)             Requested size: 501.86887pt x 301.13344pt.
- [8 <./images/Purpose.jpg>] [9 <./images/About.jpg>]
-<images/table.png, id=43, 454.69875pt x 281.05pt>
+(pdftex.def)             Requested size: 404.71353pt x 227.64894pt.
+ [6 <./images/Module.jpg> <./images/Purpose.jpg>] [7 <./images/About.jpg>]
+<images/table.png, id=37, 454.69875pt x 281.05pt>
 File: images/table.png Graphic file (type png)
  <use images/table.png>
 Package pdftex.def Info: images/table.png used on input line 231.
 (pdftex.def)             Requested size: 404.71353pt x 250.15942pt.
 
-[10] <images/result.png, id=48, 814.04124pt x 253.94875pt>
+[8] <images/result.png, id=42, 814.04124pt x 253.94875pt>
 File: images/result.png Graphic file (type png)
 
 <use images/result.png>
 Package pdftex.def Info: images/result.png used on input line 238.
 (pdftex.def)             Requested size: 505.89pt x 157.81859pt.
- <images/bracket.jpg, id=49, 943.525pt x 702.625pt>
+ <images/bracket.jpg, id=43, 943.525pt x 702.625pt>
 File: images/bracket.jpg Graphic file (type jpg)
 
 <use images/bracket.jpg>
 Package pdftex.def Info: images/bracket.jpg used on input line 245.
 (pdftex.def)             Requested size: 505.89pt x 376.73155pt.
- [11 <./images/table.png> <./images/result.png>]
-[12 <./images/bracket.jpg>] (./SpringProgReport.aux) ) 
+ [9 <./images/table.png> <./images/result.png>]
+[10 <./images/bracket.jpg>] (./SpringProgReport.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  4618 strings out of 493014
  72003 string characters out of 6133351
- 179999 words of memory out of 5000000
+ 178999 words of memory out of 5000000
  8091 multiletter control sequences out of 15000+600000
  40205 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,49p,2294b,1371s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/
-texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
-/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palati
-no/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr
-8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
->
-Output written on SpringProgReport.pdf (12 pages, 2000621 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/urw/palatino/uplri8a.pfb>
+Output written on SpringProgReport.pdf (10 pages, 1999999 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
