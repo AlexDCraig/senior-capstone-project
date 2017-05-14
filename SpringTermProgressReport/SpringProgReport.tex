@@ -5,6 +5,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{geometry}
+\usepackage{float}
 \geometry{textheight=9.5in, textwidth=7in}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
@@ -143,42 +144,109 @@ A more in-depth description of the images I'll be including:
 \end{enumerate}  
 \newpage
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=500px, height=300px]{images/dv}
 \caption{A home page where the user can go anywhere in the project using "Menu" or go immediately to the next section by clicking the button.}
 \label{fig1}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=500px, height=300px]{images/Instructions}
 \caption{Instructions on using the module presented before the module itself is presented, as outlined by Responsibility \#2.}
 \label{fig2}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=500px, height=300px]{images/Module}
 \caption{A link to the module hosted on AWS.}
 \label{fig3}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=500px, height=300px]{images/Purpose}
 \caption{A page that describes why we did this project.}
 \label{fig4}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \includegraphics[width=500px, height=300px]{images/About}
 \caption{This page describes who we are and includes a way to contact me.}
 \label{fig5}
 \end{figure}
 
+
 \section{Chongxian}
+\subsection{Where Chongxian is At On the Project}
+Chongxian has completed all functional requirements of the Machine Learning module including different algorithmn and different basketball stats for the users to choose from. The module is also put on Chongxian's Amazon web space so the users are able to run the python module remotely and generate the visible results. 
+
+\subsection{What Chongxian Has Left To Do}
+The remaining parts of this class that Chongxian has left to do are: present at Expo, turn in the spring term progress report, and complete the writing assignments needed at the end. Since all the functional requirements are completed, all I can do is to improve the performance even more. The most significant thing I can do is upgrade the Amazon Web Service so users can get their results faster remotely, but that increases the cost. Other things I can do may include introducing more algorithmns to make our module more educational.
+
+\subsection{Problems that have impeded my progress}
+At first since none of our team members have taken Machine Learning classes before, I have to explore about it. In the beginning we don't even know what language to use or what library to start with. Our TA Xinze Guan got us started with SciKit Learn library in Python. After spending a long time reseaching, learning and modifying our script, the functional module is completed. During the process I got a lot helps from the website Kaggle.com and Jake. Then we found that OSU server doesn't run Python script. Then I moved to Amazon Web Service (AWS). But the AWS free machine has too samll memory so I spend a while figuring out how to install all the required Python environments for our project. 
+Visualizing our results also met dificulty on AWS since there is no monitor part on AWS server, it purely is a computing machine. Thus PIL in Python got some trouble. After troubleshooting I finally figure it out and our module is successfully ran on it. 
+
+\subsection{Particularly interesting pieces of code}
+\begin{lstlisting}[caption=Python command line arguments that allow users to use different algorithmns from SciKit Learn, label=list2]
+if len(sys.argv) > 1:
+      if sys.argv[1] == '1':
+        print("You choose linear logistic regression to be the model")
+        model = linear_model.LogisticRegression()
+      elif sys.argv[1] == '2':
+        print("You choose svm rbf to be the model")
+        model = svm.SVC(gamma=0.001, C=100., probability=True, kernel='rbf')
+      elif sys.argv[1] == '3':
+        print("You choose svm linear to be the model")
+        model = svm.SVC(gamma=0.001, C=100., probability=True, kernel='linear')
+      elif sys.argv[1] == '4':
+        print("You choose svm poly to be the model")
+        model = svm.SVC(gamma=0.001, C=100., probability=True, kernel='poly')
+      elif sys.argv[1] == '5':
+        print("You choose svm sigmoid to be the model")
+        model = svm.SVC(gamma=0.001, C=100., probability=True, kernel='sigmoid')
+        elif sys.argv[1] == '6':
+            print("You choose Niave Bayes Gaussian to be the model")
+            model = GaussianNB()
+        elif sys.argv[1] == '7':
+            print("You choose Niave Bayes multinomial models to be the model")
+            model = MultinomialNB()
+\end{lstlisting}
+
+\subsection{Images from my parts of the project}
+A more in-depth description of the images I'll be including:
+
+\begin{enumerate}
+\item The table in \textit{Fig. 6}. The first selection includes 7 algorithms and the second selection include 10 basketball stats where users can choose multiple to generate their prediction.
+\item The terminal output when running the Python Script, found in \textit{Fig. 7}, shows the user the detail when running the script like how many samples are used and model selection score.
+\item The visualized bracket in \textit{Fig. 8}, shows users their prediction of March Madness 2017
+\end{enumerate}  
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{images/table.png}
+\caption{HTML table to allow users to choo}
+\label{fig6}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/result.png}
+\caption{The terminal output when executing the Puython script}
+\label{fig7}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{images/bracket.jpg}
+\caption{Visualize our final result as a bracket}
+\label{fig8}
+\end{figure}
+
 
 \section{Jacob}
 
