@@ -29,4 +29,4 @@ aread:
 	acroread ${filename}.pdf
 
 clean:
-	rm -f ${TEX}.{ps,pdf,log,aux,out,dvi,bbl,blg}
+	rm -f ${TEX}.{ps,log,aux,out,dvi,bbl,blg}
