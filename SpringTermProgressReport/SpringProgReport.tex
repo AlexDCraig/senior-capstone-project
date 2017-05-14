@@ -250,4 +250,41 @@ A more in-depth description of the images I'll be including:
 
 \section{Jacob}
 
+\subsection{Where Jake is At On the Project}
+Jake completed his requirements at the end of last term once the final regular season game was played for the 2016-2017 Men’s NCAA Basketball season. Since then the only thing I can do is collect additional tournament stats or more in-depth season stats. Either way I would have to introduce those into the algorithms which could cause bugs or throw our predictions off. Because of this we have not added them to our expo module as it currently satisfies all functional requirements.  The additional stats have the possibility to make our module more accurate and therefore more appealing to outside audiences.
+
+\subsection{What Jake Has Left To Do}
+The remaining parts of this class Jake has left to do are: The spring report demo, the expo, and complete the remaining writing for the upcoming assignments. In terms of technical parts left that need to be addressed, there are none except for possible future versions if so inclined. All requirements are completed and fully functional.
+
+\subsection{Problems that have impeded my progress}
+My first issue was finding a good website to scrap my data from. Some sites had duplicate data or just very confusing navigation through their sites. After that I had issues gathering the data I wanted and cleaning it up to be put in the database. An issue I was stuck on for a while was making sure I didn’t scrape duplicate stats for the same games or teams, which happened a lot more then I hoped. My next issue once I got all the data I needed was to help George with getting the bracket to automatically fill in with the predictions from his algorithms. Another big issue we ran into was hosting the python scripts. At first we tried to host them on our OSU server accounts but were not able to host embedded python scripts because it is a security risk. We had to then host our scripts of Georges AWS account which works great but the free version is a bit slow if given to much data.
+
+\subsection{Particularly interesting pieces of code}
+\begin{lstlisting}[caption=Extract the data from the boxscore's url and store in gaame object]
+
+                    game_url = 'http://scores.espn.go.com' + url
+                    try:
+                        gm_info, gm_players, gm_stats = get_data(game_url, ua, tourney_df, ncaa)
+                        gen_info.append(gm_info)
+                        if gm_players is not None:
+                            players.append(gm_players)
+                            game_stats.append(gm_stats)
+                    except:
+                        f = open('Last_Day_Parsed', 'w')
+                        f.write(day)
+                        f.close()
+                        f2 = open('Failed_Game', 'w')
+                        box = game_url.split('.com')[-1]
+                        f2.write(box)
+                        f2.close()
+                        print "Broke off loop at ", game_url
+                        return gen_info, players, game_stats
+\end{lstlisting}
+
+ 
+
+
+
+
+
 \end{document}
