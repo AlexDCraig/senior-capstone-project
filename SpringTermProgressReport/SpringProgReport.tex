@@ -260,7 +260,7 @@ The remaining parts of this class Jake has left to do are: The spring report dem
 My first issue was finding a good website to scrap my data from. Some sites had duplicate data or just very confusing navigation through their sites. After that I had issues gathering the data I wanted and cleaning it up to be put in the database. An issue I was stuck on for a while was making sure I didn’t scrape duplicate stats for the same games or teams, which happened a lot more then I hoped. My next issue once I got all the data I needed was to help George with getting the bracket to automatically fill in with the predictions from his algorithms. Another big issue we ran into was hosting the python scripts. At first we tried to host them on our OSU server accounts but were not able to host embedded python scripts because it is a security risk. We had to then host our scripts of Georges AWS account which works great but the free version is a bit slow if given to much data.
 
 \subsection{Particularly interesting pieces of code}
-\begin{lstlisting}[caption=Extract the data from the boxscore's url and store in gaame object]
+\begin{lstlisting}[caption=Extract the data from the boxscore's url and store in gaame object, label=list3]
 
                     game_url = 'http://scores.espn.go.com' + url
                     try:
