@@ -12,3 +12,7 @@
 \contentsline {subsection}{\numberline {3.4}Particularly interesting pieces of code}{8}
 \contentsline {subsection}{\numberline {3.5}Images from my parts of the project}{8}
 \contentsline {section}{\numberline {4}Jacob}{10}
+\contentsline {subsection}{\numberline {4.1}Where Jake is At On the Project}{10}
+\contentsline {subsection}{\numberline {4.2}What Jake Has Left To Do}{10}
+\contentsline {subsection}{\numberline {4.3}Problems that have impeded my progress}{11}
+\contentsline {subsection}{\numberline {4.4}Particularly interesting pieces of code}{11}
