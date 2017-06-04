@@ -44,16 +44,16 @@
 \contentsline {subsection}{\numberline {7.4}API Documentation}{5}
 \contentsline {section}{\numberline {8}How We Learned New Technology}{5}
 \contentsline {subsection}{\numberline {8.1}Alex}{5}
-\contentsline {paragraph}{\numberline {8.1.0.8}Websites}{5}
-\contentsline {paragraph}{\numberline {8.1.0.9}People}{6}
+\contentsline {paragraph}{\numberline {8.1.0.8}\emph {Websites}}{5}
+\contentsline {paragraph}{\numberline {8.1.0.9}\emph {People}}{6}
 \contentsline {section}{\numberline {9}What We Learned}{6}
 \contentsline {subsection}{\numberline {9.1}Alex}{6}
-\contentsline {paragraph}{\numberline {9.1.0.10}Technical Information}{6}
-\contentsline {paragraph}{\numberline {9.1.0.11}Non-Technical Information}{6}
-\contentsline {paragraph}{\numberline {9.1.0.12}Project Work}{6}
-\contentsline {paragraph}{\numberline {9.1.0.13}Project Management}{6}
-\contentsline {paragraph}{\numberline {9.1.0.14}Working in Teams}{6}
-\contentsline {paragraph}{\numberline {9.1.0.15}What I would do differently}{6}
+\contentsline {paragraph}{\numberline {9.1.0.10}\emph {Technical Information}}{6}
+\contentsline {paragraph}{\numberline {9.1.0.11}\emph {Non-Technical Information}}{6}
+\contentsline {paragraph}{\numberline {9.1.0.12}\emph {Project Work}}{6}
+\contentsline {paragraph}{\numberline {9.1.0.13}\emph {Project Management}}{6}
+\contentsline {paragraph}{\numberline {9.1.0.14}\emph {Working in Teams}}{6}
+\contentsline {paragraph}{\numberline {9.1.0.15}\emph {What I would do differently}}{6}
 \contentsline {subsection}{\numberline {9.2}Chongxian}{7}
 \contentsline {subsection}{\numberline {9.3}Jacob}{7}
 \contentsline {section}{Appendix\nobreakspace A: Essential Code Listings}{7}
