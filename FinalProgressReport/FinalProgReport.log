@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  4 JUN 2017 19:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  4 JUN 2017 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,54 +663,53 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9.53561> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 144.
  [3
 
-] [4]
+] [4] [5]
+Overfull \hbox (27.15475pt too wide) in paragraph at lines 219--220
+\OT1/ppl/m/n/9.53561 No in-stal-la-tion is nec-es-sary. To use our soft-ware, a
+ll a user has to do is go to this web-site: http://web.engr.oregonstate.edu/ ho
+f-
+ []
 
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.206 \node
-            (input1) [io, below of=start] {User selects algorithm}
-? 
-! Interruption.
-\@let@token #1->\let \tikz@signal@path 
-                                       =\tikz@signal@path \pgfutil@ifnextcha...
-l.206 \node
-            (input1) [io, below of=start] {User selects algorithm}
-? 
-! Interruption.
-\@let@token #1->\let \tikz@signal@path 
-                                       =\tikz@signal@path \pgfutil@ifnextcha...
-l.206 \node
-            (input1) [io, below of=start] {User selects algorithm}
-? 
-! Interruption.
-\@let@token #1->\let \tikz@signal@path 
-                                       =\tikz@signal@path \pgfutil@ifnextcha...
-l.206 \node
-            (input1) [io, below of=start] {User selects algorithm}
-? exit
- 
+[6]
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+Missing character: There is no â in font pplr7t!
+Missing character: There is no € in font pplr7t!
+Missing character: There is no ™ in font pplr7t!
+ [7] [8] (./FinalProgReport.aux) ) 
 Here is how much of TeX's memory you used:
- 13280 strings out of 495063
- 252220 string characters out of 3182201
+ 13372 strings out of 495063
+ 254400 string characters out of 3182201
  329610 words of memory out of 3000000
- 16209 multiletter control sequences out of 15000+200000
+ 16299 multiletter control sequences out of 15000+200000
  38918 words of font info for 80 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 56i,6n,55p,1444b,555s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
-texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
-rw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino
-/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on FinalProgReport.pdf (4 pages, 85011 bytes).
+ 56i,6n,55p,1444b,566s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
+ino/uplri8a.pfb>
+Output written on FinalProgReport.pdf (8 pages, 109460 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

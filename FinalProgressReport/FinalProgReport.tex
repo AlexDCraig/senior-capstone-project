@@ -202,17 +202,17 @@ This week we had Expo. Term's almost over. In the remaining three weeks we need 
 We were both lucky and unlucky to be assigned a project that did not make well-detailed documentation a necessary responsibility. We were lucky in the sense that this shaved off a lot of work we would have to do, and unlucky in the sense that this project did not expose us to how to properly write documentation.
 \subsection{How the project works}
 \begin{tikzpicture}[node distance=2cm]
-\node (start) [startstop] {User visits page}
-\node (input1) [io, below of=start] {User selects algorithm}
-\node (input2) [io, right of=input1] {User selects stats}
-\node (process1) [process, below of=input2] {Scikit-Learn works on data}
-\node (output1) [io, below of=process1] {Scikit-Learn bracket generated}
-\node (stop) [startstop, below of=output1] {User reloads main page}
-\draw [arrow] (start) -- (input1)
-\draw [arrow] (input1) -- (input2)
-\draw [arrow] (input2) -- (process1)
-\draw [arrow] (process1) -- (output1)
-\draw [arrow] (output1) -- (stop)
+\node (start) [startstop] {User visits page};
+\node (input1) [io, below of=start] {User selects algorithm};
+\node (input2) [io, right of=input1, xshift=2cm] {User selects stats};
+\node (process1) [process, below of=input2] {Scikit-Learn works on data};
+\node (output1) [io, below of=process1] {Scikit-Learn bracket generated};
+\node (stop) [startstop, below of=output1] {User reloads main page};
+\draw [arrow] (start) -- (input1);
+\draw [arrow] (input1) -- (input2);
+\draw [arrow] (input2) -- (process1);
+\draw [arrow] (process1) -- (output1);
+\draw [arrow] (output1) -- (stop);
 \end{tikzpicture}
 
 \subsection{How to use the software}
