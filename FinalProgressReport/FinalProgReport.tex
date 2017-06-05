@@ -6,6 +6,20 @@
 \usepackage{color}
 \usepackage{geometry}
 \usepackage{float}
+
+% For flow charts.
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+% Customizing flow chart components.
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+
+
+
 \geometry{textheight=9.5in, textwidth=7in}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
@@ -187,6 +201,19 @@ This week we had Expo. Term's almost over. In the remaining three weeks we need 
 \section{Project Documentation}
 We were both lucky and unlucky to be assigned a project that did not make well-detailed documentation a necessary responsibility. We were lucky in the sense that this shaved off a lot of work we would have to do, and unlucky in the sense that this project did not expose us to how to properly write documentation.
 \subsection{How the project works}
+\begin{tikzpicture}[node distance=2cm]
+\node (start) [startstop] {User visits page}
+\node (input1) [io, below of=start] {User selects algorithm}
+\node (input2) [io, right of=input1] {User selects stats}
+\node (process1) [process, below of=input2] {Scikit-Learn works on data}
+\node (output1) [io, below of=process1] {Scikit-Learn bracket generated}
+\node (stop) [startstop, below of=output1] {User reloads main page}
+\draw [arrow] (start) -- (input1)
+\draw [arrow] (input1) -- (input2)
+\draw [arrow] (input2) -- (process1)
+\draw [arrow] (process1) -- (output1)
+\draw [arrow] (output1) -- (stop)
+\end{tikzpicture}
 
 \subsection{How to use the software}
 No installation is necessary. To use our software, all a user has to do is go to this website: http://web.engr.oregonstate.edu/~hoffera/CapstoneProject/MachineLearnYourWayToMarchMadnessGlory.html. On this site, a link to the machine learning module is posted. The module is compatible across all browsers. There are instructions on how to use the module on this site, as well as on the page where the module is hosted itself. To use the module, the user clicks on one machine learning algorithm and any number of the provided statistical categories and submits their choices. Then, a waiting period ranging from two minutes for simple machine learning algorithms to many hours for more precise algorithms is required. A message displays on the screen to inform the user they must wait. Then, the user is informed when the bracket has been generated. Finally, the user returns to the module page to see their generated bracket presented. The user can repeat this process an arbitrary number of times to generate an arbitrary number of brackets, but of course, the amount of time it takes to utilize certain machine learning algorithms is an important constraint the user must consider.
