@@ -2,59 +2,59 @@
 \contentsline {section}{\numberline {2}Original Requirements Document}{3}
 \contentsline {subsection}{\numberline {2.1}Changes from Original Requirements Document}{12}
 \contentsline {subsection}{\numberline {2.2}Revised Gantt Charts}{12}
-\contentsline {section}{\numberline {3}Original Design Document}{12}
-\contentsline {subsection}{\numberline {3.1}Changes from Original Design Document}{24}
-\contentsline {section}{\numberline {4}Original Technology Review}{24}
-\contentsline {subsection}{\numberline {4.1}Changes from Original Technology Review}{33}
-\contentsline {section}{\numberline {5}Weekly Blog Posts}{33}
-\contentsline {subsection}{\numberline {5.1}Alex}{33}
-\contentsline {subsubsection}{\numberline {5.1.1}Fall Term}{33}
-\contentsline {paragraph}{\numberline {5.1.1.1}\emph {Week 3}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.2}\emph {Week 4}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.3}\emph {Week 5}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.4}\emph {Week 6}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.5}\emph {Week 7}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.6}\emph {Week 8}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.7}\emph {Week 9}}{33}
-\contentsline {paragraph}{\numberline {5.1.1.8}\emph {Week 10}}{33}
-\contentsline {subsubsection}{\numberline {5.1.2}Winter Term}{33}
-\contentsline {paragraph}{\numberline {5.1.2.1}\emph {Week 1}}{33}
-\contentsline {paragraph}{\numberline {5.1.2.2}\emph {Week 2}}{33}
-\contentsline {paragraph}{\numberline {5.1.2.3}\emph {Week 3}}{34}
-\contentsline {paragraph}{\numberline {5.1.2.4}\emph {Week 4}}{34}
-\contentsline {paragraph}{\numberline {5.1.2.5}\emph {Week 5}}{34}
-\contentsline {paragraph}{\numberline {5.1.2.6}\emph {Week 6}}{34}
-\contentsline {paragraph}{\numberline {5.1.2.7}\emph {Week 7}}{34}
-\contentsline {paragraph}{\numberline {5.1.2.8}\emph {Week 8}}{34}
-\contentsline {paragraph}{\numberline {5.1.2.9}\emph {Week 9}}{34}
-\contentsline {subsubsection}{\numberline {5.1.3}Spring Term}{34}
-\contentsline {paragraph}{\numberline {5.1.3.1}\emph {Week 1}}{34}
-\contentsline {paragraph}{\numberline {5.1.3.2}\emph {Week 2}}{34}
-\contentsline {paragraph}{\numberline {5.1.3.3}\emph {Week 3}}{34}
-\contentsline {paragraph}{\numberline {5.1.3.4}\emph {Week 4}}{35}
-\contentsline {paragraph}{\numberline {5.1.3.5}\emph {Week 5}}{35}
-\contentsline {paragraph}{\numberline {5.1.3.6}\emph {Week 6}}{35}
-\contentsline {paragraph}{\numberline {5.1.3.7}\emph {Week 7}}{35}
-\contentsline {subsection}{\numberline {5.2}Chongxian}{35}
-\contentsline {subsection}{\numberline {5.3}Jake}{35}
-\contentsline {section}{\numberline {6}Final Poster}{36}
-\contentsline {section}{\numberline {7}Project Documentation}{38}
-\contentsline {subsection}{\numberline {7.1}How the project works}{38}
-\contentsline {subsection}{\numberline {7.2}How to use the software}{38}
-\contentsline {subsection}{\numberline {7.3}Requirements for usage}{38}
-\contentsline {subsection}{\numberline {7.4}API Documentation}{39}
-\contentsline {section}{\numberline {8}How We Learned New Technology}{39}
-\contentsline {subsection}{\numberline {8.1}Alex}{39}
-\contentsline {paragraph}{\numberline {8.1.0.8}\emph {Websites}}{39}
-\contentsline {paragraph}{\numberline {8.1.0.9}\emph {People}}{39}
-\contentsline {section}{\numberline {9}What We Learned}{39}
-\contentsline {subsection}{\numberline {9.1}Alex}{39}
-\contentsline {paragraph}{\numberline {9.1.0.10}\emph {Technical Information}}{39}
-\contentsline {paragraph}{\numberline {9.1.0.11}\emph {Non-Technical Information}}{39}
-\contentsline {paragraph}{\numberline {9.1.0.12}\emph {Project Work}}{39}
-\contentsline {paragraph}{\numberline {9.1.0.13}\emph {Project Management}}{40}
-\contentsline {paragraph}{\numberline {9.1.0.14}\emph {Working in Teams}}{40}
-\contentsline {paragraph}{\numberline {9.1.0.15}\emph {What I would do differently}}{40}
-\contentsline {subsection}{\numberline {9.2}Chongxian}{40}
-\contentsline {subsection}{\numberline {9.3}Jacob}{40}
-\contentsline {section}{Appendix\nobreakspace A: Essential Code Listings}{40}
+\contentsline {section}{\numberline {3}Original Design Document}{14}
+\contentsline {subsection}{\numberline {3.1}Changes from Original Design Document}{26}
+\contentsline {section}{\numberline {4}Original Technology Review}{26}
+\contentsline {subsection}{\numberline {4.1}Changes from Original Technology Review}{35}
+\contentsline {section}{\numberline {5}Weekly Blog Posts}{35}
+\contentsline {subsection}{\numberline {5.1}Alex}{35}
+\contentsline {subsubsection}{\numberline {5.1.1}Fall Term}{35}
+\contentsline {paragraph}{\numberline {5.1.1.1}\emph {Week 3}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.2}\emph {Week 4}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.3}\emph {Week 5}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.4}\emph {Week 6}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.5}\emph {Week 7}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.6}\emph {Week 8}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.7}\emph {Week 9}}{35}
+\contentsline {paragraph}{\numberline {5.1.1.8}\emph {Week 10}}{35}
+\contentsline {subsubsection}{\numberline {5.1.2}Winter Term}{35}
+\contentsline {paragraph}{\numberline {5.1.2.1}\emph {Week 1}}{35}
+\contentsline {paragraph}{\numberline {5.1.2.2}\emph {Week 2}}{35}
+\contentsline {paragraph}{\numberline {5.1.2.3}\emph {Week 3}}{36}
+\contentsline {paragraph}{\numberline {5.1.2.4}\emph {Week 4}}{36}
+\contentsline {paragraph}{\numberline {5.1.2.5}\emph {Week 5}}{36}
+\contentsline {paragraph}{\numberline {5.1.2.6}\emph {Week 6}}{36}
+\contentsline {paragraph}{\numberline {5.1.2.7}\emph {Week 7}}{36}
+\contentsline {paragraph}{\numberline {5.1.2.8}\emph {Week 8}}{36}
+\contentsline {paragraph}{\numberline {5.1.2.9}\emph {Week 9}}{36}
+\contentsline {subsubsection}{\numberline {5.1.3}Spring Term}{36}
+\contentsline {paragraph}{\numberline {5.1.3.1}\emph {Week 1}}{36}
+\contentsline {paragraph}{\numberline {5.1.3.2}\emph {Week 2}}{36}
+\contentsline {paragraph}{\numberline {5.1.3.3}\emph {Week 3}}{36}
+\contentsline {paragraph}{\numberline {5.1.3.4}\emph {Week 4}}{36}
+\contentsline {paragraph}{\numberline {5.1.3.5}\emph {Week 5}}{36}
+\contentsline {paragraph}{\numberline {5.1.3.6}\emph {Week 6}}{36}
+\contentsline {paragraph}{\numberline {5.1.3.7}\emph {Week 7}}{37}
+\contentsline {subsection}{\numberline {5.2}Chongxian}{37}
+\contentsline {subsection}{\numberline {5.3}Jake}{37}
+\contentsline {section}{\numberline {6}Final Poster}{38}
+\contentsline {section}{\numberline {7}Project Documentation}{40}
+\contentsline {subsection}{\numberline {7.1}How the project works}{40}
+\contentsline {subsection}{\numberline {7.2}How to use the software}{40}
+\contentsline {subsection}{\numberline {7.3}Requirements for usage}{40}
+\contentsline {subsection}{\numberline {7.4}API Documentation}{41}
+\contentsline {section}{\numberline {8}How We Learned New Technology}{41}
+\contentsline {subsection}{\numberline {8.1}Alex}{41}
+\contentsline {paragraph}{\numberline {8.1.0.8}\emph {Websites}}{41}
+\contentsline {paragraph}{\numberline {8.1.0.9}\emph {People}}{41}
+\contentsline {section}{\numberline {9}What We Learned}{41}
+\contentsline {subsection}{\numberline {9.1}Alex}{41}
+\contentsline {paragraph}{\numberline {9.1.0.10}\emph {Technical Information}}{41}
+\contentsline {paragraph}{\numberline {9.1.0.11}\emph {Non-Technical Information}}{41}
+\contentsline {paragraph}{\numberline {9.1.0.12}\emph {Project Work}}{41}
+\contentsline {paragraph}{\numberline {9.1.0.13}\emph {Project Management}}{42}
+\contentsline {paragraph}{\numberline {9.1.0.14}\emph {Working in Teams}}{42}
+\contentsline {paragraph}{\numberline {9.1.0.15}\emph {What I would do differently}}{42}
+\contentsline {subsection}{\numberline {9.2}Chongxian}{42}
+\contentsline {subsection}{\numberline {9.3}Jacob}{42}
+\contentsline {section}{Appendix\nobreakspace A: Essential Code Listings}{42}
