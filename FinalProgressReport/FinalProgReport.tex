@@ -148,18 +148,52 @@ The majority of requirements outlined in this document did not change. However, 
 	\hline
 	\end{tabular}
 \end{center}
-\subsection{Revised Gantt Charts}
+\subsection{Final Gantt Charts}
 The three subsequent Gantt Charts were developed for this document in order to elucidate the schedule by which documents were actually produced/milestones were actually reached versus our projected schedule represented by the Gantt Charts in the origial Requirements Document.
 \includepdf{images/ganttcharts.pdf}
 
 \section{Original Design Document}
 \includepdf[pages={1-}]{images/DesignDoc.pdf}
 \subsection{Changes from Original Design Document}
+Generally speaking, our original Design Document gets the nuts and bolts of what our module needed to do correct, and demonstrated a lot of the functionalities necessary pretty well using things like message sequence diagrams. A list of some changes we noticed we'd need to make if we were to write this document again today, with the knowledge of how the project actually went:
+\begin{center}
+	\begin{tabular}{ || p{0.2\linewidth} || p{0.2\linewidth} || p{0.2\linewidth}  || p{0.2\linewidth} ||}
+	\hline
+ 	  & Design decision & What happened to it & Comments \\ \hline
+	1 & Using PyGUI & Dropped & Needlessly sophisticated GUI, replaced with traditional web techs \\ \hline
+	2 & Using VTK & Dropped & Needlessly sophisticated GUI, replaced with traditional web techs \\ \hline
+	3 & Using Webix & Dropped & Don't need a special technology to display instructions \\ \hline
+	4 & Using Python to scrape stats from internet & Persisted & Jake was spot on with this design decision \\ \hline
+	5 & Storing player statistics in database & Dropped & Allowing training using player stats would drastically reduce module speed \\ \hline
+	6 & Generating simple brackets in Scikit first, then complex ones & Persisted & To test accuracy, we first generated simple brackets \\ \hline
+	7 & Using AWS for database, execution & Persisted & OSU web server did not support Python \\
+	\hline
+	\end{tabular}
+\end{center}
 
 \section{Original Technology Review}
 \includepdf[pages={1-}]{images/TechReview.pdf}
 
 \subsection{Changes from Original Technology Review}
+We had a lot of changes from our original Technology Review. This was largely because our module didn't need to be as wildly ambitious as the technologies we considered using would've made it. We ended up wanting to make things like speed of bracket generation and variety of algorithm and statistic choice more of a priority than slickness of the GUI, and due to the limited nature of this course, we had to choose one, so we chose the former with our client's approval. Below is a table of our changes in technology from our original document to the reality of our project.
+
+\begin{center}
+	\begin{tabular}{ || p{0.2\linewidth} || p{0.2\linewidth} || p{0.2\linewidth}  || p{0.2\linewidth} ||}
+	\hline
+ 	  & Technology & What happened to it & Comments \\ \hline
+	1 & PyGUI & Dropped & The size of the library and difficulty to pick it up rendered it incompatible for the size of our project \\ \hline
+	2 & Webix & Dropped & Like stated previously, this technology is inteded for much more sophisticated GUIs. Our GUI did not require the level of elegance promised by this complex library, and simply using HTML/CSS/JavaScript was adequate \\ \hline
+	3 & VTK & Dropped & See above two boxes \\ \hline
+	4 & Sportsreference.com & Persisted & We used this website for basketball statistics \\ \hline
+	5 & PHPMyAdmin & Persisted & We used this technology for storing our basketball statistics \\ \hline
+	6 & Scikit-Learn & Persisted & We used this API because common machine learning algorithms were already implemented in it \\ \hline
+	7 & Amazon Web Services & Persisted & We used AWS to store data on and to compute machine learning algorithms \\ \hline
+	8 & py-statistics & Dropped & The kind of optimization py-statistics allowed for was beyond the scope of our requirements \\
+	\hline
+	\end{tabular}
+\end{center}
+
+
 
 \section{Weekly Blog Posts}
 \subsection{Alex}
