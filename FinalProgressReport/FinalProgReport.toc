@@ -1,6 +1,14 @@
 \contentsline {section}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {2}Original Requirements Document}{3}
 \contentsline {subsection}{\numberline {2.1}Changes from Original Requirements Document}{12}
+\contentsline {subsubsection}{\numberline {2.1.1}New requirements added}{12}
+\contentsline {paragraph}{\numberline {2.1.1.1}Speed}{12}
+\contentsline {subsubsection}{\numberline {2.1.2}Change in existing requirements}{12}
+\contentsline {paragraph}{\numberline {2.1.2.1}Bracket presentation}{12}
+\contentsline {subsubsection}{\numberline {2.1.3}Removal of existing requirements}{12}
+\contentsline {paragraph}{\numberline {2.1.3.1}Webix}{12}
+\contentsline {paragraph}{\numberline {2.1.3.2}Player statistics}{12}
+\contentsline {paragraph}{\numberline {2.1.3.3}API documentation}{12}
 \contentsline {subsection}{\numberline {2.2}Revised Gantt Charts}{12}
 \contentsline {section}{\numberline {3}Original Design Document}{14}
 \contentsline {subsection}{\numberline {3.1}Changes from Original Design Document}{26}
