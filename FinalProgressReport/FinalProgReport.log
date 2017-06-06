@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.18)  5 JUN 2017 01:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.3.16)  5 JUN 2017 22:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,7 +1358,7 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <8.03> not available
 Here is how much of TeX's memory you used:
  16250 strings out of 495063
  306599 string characters out of 3182201
- 428268 words of memory out of 3000000
+ 428269 words of memory out of 3000000
  19108 multiletter control sequences out of 15000+200000
  42747 words of font info for 89 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
