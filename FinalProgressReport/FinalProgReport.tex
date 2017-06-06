@@ -135,15 +135,19 @@ Biochemistry and Biophysics are two fields that are ripe with many exciting brea
 \includepdf[pages={1-}]{images/RequirementDoc.pdf}
 \newpage
 \subsection{Changes from Original Requirements Document}
-The majority of requirements outlined in this document did not change. However, some minor changes are noted below.
-\subsubsection{New requirements added}
-\paragraph{Speed} For the purposes of presenting our project at Expo and to ensure students wouldn't get frustrated waiting for their generated brackets, a new requirement was added that there must be at least one machine learning algorithm that can generate a bracket within two minutes. The \emph{Support Vector Machine} algorithms can do this.
-\subsubsection{Change in existing requirements}
-\paragraph{Bracket presentation} Users have to click back in their browser to see the bracket they just generated- the module does not automatically do it for them.
-\subsubsection{Removal of existing requirements}
-\paragraph{Webix} We dropped the use of the JavaScript library Webix for graphical user interface work. It turned out that using such a large and sophisticated library would be overkill for something as simple as printing out a formatted March Madness bracket. Simple web technologies worked just fine.
-\paragraph{Player statistics} We dropped the use of player statistics as an option in generating a bracket. We did this because it ended up to be not feasible to write a module that could reference that breadth of data without serious performance hindrances.
-\paragraph{API documentation} We got rid of this requirement, because it didn't make any sense to write API documentation when we were exclusively using other APIs. When we involved this requirement, we thought we'd have to write machine learning algorithms in Python by scratch, apparently. Luckily, Scikit-Learn has good API documentation.
+The majority of requirements outlined in this document did not change. However, some minor changes are noted in the table below.
+\begin{center}
+	\begin{tabular}{ || c || c || c  || c ||}
+	\hline
+ 	  & Requirement & What happened to it & Comments \\ \hline
+	1 & Speed & Added & SVM algos can generate in less than 2 min \\ \hline
+	2 & Bracket presentation & Changed & Users click back in browser to see bracket \\ \hline
+	3 & Webix & Removed & Unnecessarily complex GUI tool \\ \hline
+	4 & Player stats & Removed & Would make module slow \\ \hline
+	5 & API documentation & Removed & We didn't make any new methods, used other APIs \\ 
+	\hline
+	\end{tabular}
+\end{center}
 \subsection{Revised Gantt Charts}
 The three subsequent Gantt Charts were developed for this document in order to elucidate the schedule by which documents were actually produced/milestones were actually reached versus our projected schedule represented by the Gantt Charts in the origial Requirements Document.
 \includepdf{images/ganttcharts.pdf}
