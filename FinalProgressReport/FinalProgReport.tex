@@ -248,7 +248,69 @@ This week I interviewed Brandon Chatham for the WIRED assignment. We are prepari
 This week we got our spring term progress report ready. Expo is next week and we're preparing.
 \paragraph{\emph{Week 7}}
 This week we had Expo. Term's almost over. In the remaining three weeks we need to edit our original docs, finish 3 small writing assignments, and do a final progress report.
+
 \subsection{Chongxian}
+\subsubsection{Fall Term}
+\paragraph{\emph{Week 3}}
+We wrote our problem statement this week after meeting with our client Dr.Hsu. After a few revisions our client and our team all signed the paper and submitted a hard copy. The difficulty we meet is figuring out how to convert our statement to LaTex without previous experience of LaTex. But we worked it out. Next week we plan to go into details about where to start our project. Maybe from the interface fist as we shortly discussed this week.
+\paragraph{\emph{Week 4}}
+This week we get feedback from the instructor about our problem statement from last week and we revise it. After communicating with our client again with our new problem statement, we submitted again. Revising our problem statement goes smoothly. Next week we will work on the requirement document and prepare for the career fair.
+\paragraph{\emph{Week 5}}
+This week we completed our problem statement and beginning writing our requirement document. We met difficulties when writing the requirement document. We don't know what specific guidelines, format and contents to follow for the requirement and we didn't discuss about this during lecture. Next week we will talk with our client and complete our requirement document.
+\paragraph{\emph{Week 6}}
+We complete our requirement document this week. After revising the rough draft, we also put a Gantt chart of our program schedule in it. Finally we format it with LaTeX. Our client and the team all signed it and submit it successfully. The problem I have is when creating the gantt chart using pst-gantt package. There are a few errors first but we figured it out. Next week we will be working on the tech review.
+\paragraph{\emph{Week 7}}
+This week we revised our requirement document. We elaborate the details and add more detailed job specification to our gantt chart. We also separate the labors between our teammates for the tech review. Besides we are researching Machine Learning Algorithms to use in our project. So far we have found Scikit to be a good start. Difficulties we met are formatting LaTeX and researching for Machine Learning Algorithm. Next week we will be working on the design document and continue researching
+\paragraph{\emph{Week 8}}
+This week we are focusing on writing our tech review. We first talked about dividing labor between group members. After reaching agreement, we begin researching our own technology. We finished writing the tech review on Wednesday and submitted the PDF.
+
+The difficulties I met are coming up with three technologies for the parts I am responsible for. I am responsible generally for designing machine algorithm thus I have to explore machine algorithm options. Since none of us are familiar with machine learning, it took me a while for researching. And three technologies are kind hard for me since my part is more a mathematical solution than using some technology. But finally I come up with tools/library I am very likely to use and finished the tech review.
+
+Next week we will be working on the design document.
+\paragraph{\emph{Week 9}}
+This week we are discussing our design document and preparing for our term progress term. Difficulties we met including setting up the environment we need for voice over presentation. Next week we will be implementing design document and writing our progress report.
+\paragraph{\emph{Week 10}}
+This week we are doing our design document. We wrote our own individual three pieces and then work together to integrate them into one design document. We also add the introduction, glossary section, etc. Difficulties we met including researching the machine learning models and statistics models. I spent a lot of time reading documents about which model to use in the SciKit-Learn. Finally I found supervised learning regression model best fits our need. We will be finishing the progress report and presentation later.
+\subsubsection{Winter Term}
+\paragraph{\emph{Week 1}}
+This week we have our first meeting in Winter term. We agreed on a weekly meeting time with our TA and talked about progress over the break. We are going to start implementing our plan soon. We look forward to a great term.
+\paragraph{\emph{Week 2}}
+This week we planned what we want to accomplish before midterm. I have started on trying to use support vector machine to classify the the game results. Next I will supply the model with two to three variables and see which SVM core I should use to get more accurate results.
+\paragraph{\emph{Week 3}}
+This week Jake collect some data. I used excel to convert the file into csv file. The data includes the stats for more than 300 schools in NCAA including detailed data such as field goal and field goal percentage. The data will be great to use as training set. We will also be needing single match data and result to be both as training set and test set for our classification model. Since single match with result will have a true(win)/false(loss) result that we can verify the accuracy of our model.
+
+The difficulty I have in this week is trying to understand the mathematical background of classification model. And what file format to save our data. With our TA's help, I figured that both .txt and .csv file will be sufficient to save the data.
+
+Next week we will collect more data includes single matches in NCAA and use scikit to train and test the model.
+\paragraph{\emph{Week 4}}
+This week Jake collected a lot of data for NCAA matches. And after learning from classification examples I was able to read all the csv data file successfully into numpy array. I also tried using sklearn to train the model and produce a test outcome. The outcome basically looks fitting to the data, i.e the predicted outcome relates to the expected outcome mostly correct. But the prediction also generate some extreme confidence like 99 percent of winning chance. Which I think could be problematic since extreme prediction will have a extreme penalty in LogLoss equation. We will need to be more careful with extreme prediction. Next week I will look into the extreme prediction in more detail to make our predictions more reasonable.
+\paragraph{\emph{Week 5}}
+This week our team are working toward our alpha release. After generating the output, I start to analyze the output with LogLoss formula and test multiple different classifiers. I also tried to use different training data sets and testing data sets to see different output. Next week we will finish up our alpha release.
+\paragraph{\emph{Week 6}}
+This week we got together to write our progress report. We also creates our slides for presentation and record a presentation mp4 file together. We didn't have too much difficulties as we have done something similar last term. Next week we will be continuing improving our project and finish other responsibilities of our project.
+\paragraph{\emph{Week 7}}
+Last week we finished our alpha release this week I am working on how to make our predictions more accurate. I research about March Madness competition to have a better understanding and also read some data analysis visualization techniques to help me better understand which attribute of our basketball data may play a big part in the match outcome. Next week we will prepare for our beta release.
+\paragraph{\emph{Week 8}}
+After releasing our alpha release, we are working on our beta release which includes integrating machine learning into the website, enhancing machine learning algorithm and allowing the users to choose different categories they want. I have made progress in enhancing the algorithm and we still need to meet together and think about integrating it into the website since none of us have previous experience integrating python script with the website. We will be working on it next week and have our presentation next Friday.
+\paragraph{\emph{Week 9}}
+This week we had a short presentation of our project on Thursday morning. After having the python script, I am working on allowing the users to select different stats they want to consider in this March Madness prediction. I figured that will be reliable using python command line tools since that will make our future work in websites easier. Then I wrote the php that have a simple table allowing the users to choose stats, and put the user's choice array into the python command line, generate the csv file. Finally use a bracket generator to generate a user-friendly picture. At this point I am basically done with my three responsibilities.
+\subsubsection{Spring Term}
+\paragraph{\emph{Week 1}}
+This week I am working on allowing the users to select different estimator. I was using linear regression estimator before. I tried support vector machine's support vector classification. SVM in sklearn has several kernel available. I have tried linear, polynomial, rbf. SVM model has pretty good performance on our project so far, but it could take very long to generate the results. It took my MacBook Pro about 10 hours to fit about 70000 instances for SVM's rbf kernel. Next week I will finish this part.
+\paragraph{\emph{Week 2}}
+In week 2 I updated the python script that allows users to choose different machine learning estimators. And I also wrote the corresponding php files to allow the users to choose them on the websites.
+
+The five estimators the users are allowed to choose from is linear regression, SVM RBF, SVM Linear, SVM Poly, SVM Sigmoid. Although I change the starting year to 2015 in the script, SVM still takes too much time to fit the model. So it is probably not practical for the users to generate them on the server. In the future, I will consider using model persistency technique but that won't allow the users to choose different stats since that will be too many model files(Thousands).
+\paragraph{\emph{Week 3}}
+This week we finalized the poster. Next week we will be preparing for the EXPO presentation and wrap up the project code.
+\paragraph{\emph{Week 4}}
+This week I updated the algorithm and allow users to use Naive Bayes Classifiers. Naive Bayes is the fastest algorithm so far.
+\paragraph{\emph{Week 5}}
+This week we don't have much to do on the project itself. We did do an interview with another team and write the WIRED assignment.
+\paragraph{\emph{Week 6}}
+This week we are preparing for our midterm report and the EXPO next week.
+\paragraph{\emph{Week 7}}
+We finished presenting our project in EXPO this week!
 
 \subsection{Jake}
 \subsubsection{Fall Term}
