@@ -1,9 +1,7 @@
-TEX=main
+filename=main
 
-pdf: ${TEX}.tex 
-	latex $(TEX).tex
-	dvips -R -Poutline -t letter ${TEX}.dvi -o ${TEX}.ps
-	ps2pdf ${TEX}.ps
+pdf: ps
+	ps2pdf ${filename}.ps
 
 pdf-print: ps
 	ps2pdf -dColorConversionStrategy=/LeaveColorUnchanged -dPDFSETTINGS=/printer ${filename}.ps
@@ -31,4 +29,4 @@ aread:
 	acroread ${filename}.pdf
 
 clean:
-	rm -f ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg}
+rm -f ${filename}.{ps,pdf,log,aux,out,dvi,bbl,blg}

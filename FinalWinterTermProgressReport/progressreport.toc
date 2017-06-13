@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Chongxian Chen's progress in Winter 2017}{3}{section.2}
+\contentsline {section}{\numberline {3}Retrospective}{4}{section.3}
+\contentsline {section}{\numberline {4}Screenshots of the results}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}A table written in php that allows the user to choose different stats to be considered in the prediction.}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Output of the python script generating the results from the user's choice.}{4}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3} A bracket that uses March Madness 2017 format and shows the prediction from our model}{5}{subsection.4.3}
+\contentsline {section}{\numberline {5}Evaluation of the Team}{6}{section.5}
